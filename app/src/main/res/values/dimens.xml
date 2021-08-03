@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="altologo">200dp</dimen>
+    <dimen name="altologoInicio">120dp</dimen>
+    <dimen name="anchologoInicio">120dp</dimen>
+
+    <dimen name="tamaniotituloinicio">30sp</dimen>
+    <dimen name="tamaniologologin">160dp</dimen>
+    <dimen name="tamaniotitulologin">20sp</dimen>
+    <dimen name="tamaniosubtitilologin">15sp</dimen>
+    <dimen name="anchologueo">290dp</dimen>
+    <dimen name="anchobotonlogin">150dp</dimen>
+
+
+</resources>
