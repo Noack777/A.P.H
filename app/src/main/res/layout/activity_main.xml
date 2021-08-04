@@ -46,7 +46,8 @@
             android:layout_marginTop="90dp"
             android:hint="@string/insertecodigo"
             android:minHeight="48dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
 
         <Space
             android:layout_width="match_parent"
