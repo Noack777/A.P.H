@@ -12,7 +12,7 @@
     <string name="insertecodigo">Codigo</string>
     <string name="codigoadmin">Codigo, Admin</string>
     <string name="botoningresar">INGRESAR</string>
-    <string name="ingresoadmin">¿Eres Admin?, Ingresa por aqui</string>
+    <string name="ingresoAdmin">¿Eres Admin?, Ingresa por aqui</string>
     <string name="tituloadmin">Bienvenido Admin</string>
     <string name="subtitleadmin1">Ingresa con tu codigo único y registra a tus compañeros</string>
     <string name="subtitleadmin2">de trabajo</string>
