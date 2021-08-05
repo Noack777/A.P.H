@@ -24,6 +24,7 @@
     <string name="repiteelcodigo">Repite el Codigo</string>
     <string name="registrar">¡Registralo!</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">maps</string>
 
 
 </resources>
