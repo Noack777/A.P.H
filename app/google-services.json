@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "947193540666",
+    "project_id": "app-prehospitalaria",
+    "storage_bucket": "app-prehospitalaria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947193540666:android:f330a535111583c7530503",
+        "android_client_info": {
+          "package_name": "com.historiaclinica.aph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947193540666-8u3iqndu0bjnjt30rjnkae0flrmn2r69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.historiaclinica.aph",
+            "certificate_hash": "ded38a549cc02a1404140b21ccde6eb1af7f516c"
+          }
+        },
+        {
+          "client_id": "947193540666-tclfeqnkbv1dlqd2l9ki25q4nlf1r63l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3LHEbW24hwhWhIJuSs8Ftx9cWlLIwSLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947193540666-tclfeqnkbv1dlqd2l9ki25q4nlf1r63l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
