@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioDetailDialogFragment">
+    <fragment
+        android:id="@+id/loginAdminDetailDialogFragment"
+        android:name="com.historiaclinica.aph.ui.fragments.LoginAdminDetailDialogFragment"
+        android:label="fragment_login_admin_detail_dialog"
+        tools:layout="@layout/fragment_login_admin_detail_dialog" >
+        <action
+            android:id="@+id/action_loginAdminDetailDialogFragment_to_registroDetailDialogFragment"
+            app:destination="@id/registroDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroDetailDialogFragment"
+        android:name="com.historiaclinica.aph.ui.fragments.RegistroDetailDialogFragment"
+        android:label="fragment_registro_detail_dialog"
+        tools:layout="@layout/fragment_registro_detail_dialog" />
+    <fragment
+        android:id="@+id/inicioDetailDialogFragment"
+        android:name="com.historiaclinica.aph.ui.fragments.InicioDetailDialogFragment"
+        android:label="fragment_inicio_detail_dialog"
+        tools:layout="@layout/fragment_inicio_detail_dialog" />
+    <activity
+        android:id="@+id/splashscreeActivity2"
+        android:name="com.historiaclinica.aph.ui.activities.SplashscreeActivity"
+        android:label="activity_splashscree"
+        tools:layout="@layout/activity_splashscree" />
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="com.historiaclinica.aph.ui.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_loginAdminDetailDialogFragment"
+            app:destination="@id/loginAdminDetailDialogFragment" />
+        <action
+            android:id="@+id/action_mainActivity_to_inicioDetailDialogFragment"
+            app:destination="@id/inicioDetailDialogFragment" />
+    </fragment>
+</navigation>
