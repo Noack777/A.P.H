@@ -3,6 +3,9 @@ plugins {
     id 'kotlin-android'
 }
 
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
 android {
     compileSdk 31
 
@@ -54,6 +57,7 @@ dependencies {
     apply plugin: 'com.google.gms.google-services'
     implementation platform('com.google.firebase:firebase-bom:28.3.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore:23.0.3'
 
     implementation'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation'androidx.navigation:navigation-ui-ktx:2.1.0'
