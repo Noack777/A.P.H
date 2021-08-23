@@ -66,7 +66,7 @@
             android:background="@drawable/boton_login"
             android:layout_gravity="center"/>
 
-        //boton para pasar a la pantalla de admin
+        //boton para el ingreso del admin
         <Button
             android:id="@+id/botonadmin"
             android:layout_width="290dp"
