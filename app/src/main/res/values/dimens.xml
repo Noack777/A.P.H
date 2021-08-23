@@ -11,6 +11,10 @@
     <dimen name="tamaniosubtitilologin">15sp</dimen>
     <dimen name="anchologueo">290dp</dimen>
     <dimen name="anchobotonlogin">150dp</dimen>
+    <dimen name="anchologotecno">80dp</dimen>
+    <dimen name="anchonombre">200dp</dimen>
+    <dimen name="altonombre">80dp</dimen>
+
 
 
 </resources>

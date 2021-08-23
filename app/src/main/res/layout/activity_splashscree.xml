@@ -13,10 +13,30 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/altologo"
         android:src="@drawable/logo_aph"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/logotecno"
+        android:layout_width="@dimen/anchologotecno"
+        android:layout_height="@dimen/anchologotecno"
+        android:src="@drawable/Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo_aph"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/nombretecno"
+        android:layout_width="@dimen/anchonombre"
+        android:layout_height="@dimen/altonombre"
+        android:src="@drawable/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotecno"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
