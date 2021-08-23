@@ -13,6 +13,7 @@
         android:background="@color/secundario">
 
         <ImageView
+            android:id="@+id/ivlogo_aph"
             android:layout_width="@dimen/tamaniologologin"
             android:layout_height="@dimen/tamaniologologin"
             android:src="@drawable/logo_aph"
