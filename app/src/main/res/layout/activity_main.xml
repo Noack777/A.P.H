@@ -54,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"/>
 
+        //boton para loguear el usuario
         <Button
             android:id="@+id/botonlogin"
             android:layout_width="@dimen/anchobotonlogin"
@@ -63,6 +64,7 @@
             android:background="@drawable/boton_login"
             android:layout_gravity="center"/>
 
+        //boton para pasar a la pantalla de admin
         <Button
             android:id="@+id/botonadmin"
             android:layout_width="290dp"
