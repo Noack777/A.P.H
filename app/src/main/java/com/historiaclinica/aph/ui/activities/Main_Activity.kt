@@ -1,9 +1,10 @@
-package com.historiaclinica.aph
+package com.historiaclinica.aph.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.historiaclinica.aph.R
 
-class MainActivity : AppCompatActivity() {
+class Main_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
