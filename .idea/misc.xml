@@ -3,12 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/A.P.H/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/drawable/boton_login.xml" value="0.23914473684210527" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_inicio.xml" value="0.22894736842105262" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_splashscree.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_confi.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_confi_detail_dialog.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_inicio.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_inicio_detail_dialog.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_inicio_detail_dialog2.xml" value="0.22894736842105262" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_login.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_login__admin.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_login_admin_detail_dialog.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_login_detail_dialog.xml" value="0.16623931623931623" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_registro.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_registro_detail_dialog.xml" value="0.16623931623931623" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
   </component>
 </project>
