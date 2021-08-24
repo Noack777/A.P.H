@@ -8,6 +8,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import com.historiaclinica.aph.R
+import kotlinx.android.synthetic.main.activity_splashscree.*
 
 
 class SplashscreeActivity : AppCompatActivity() {
@@ -18,7 +19,10 @@ class SplashscreeActivity : AppCompatActivity() {
 
 
         val animation = AnimationUtils.loadAnimation(this, R.anim.animacion)
-        //Como hpts se Asigna el componente a la animacion!?//
+        val animation_abajo = AnimationUtils.loadAnimation(this, R.anim.animacion_abajo)
+        logo1.startAnimation(animation)
+        logotecno.startAnimation(animation_abajo)
+        nombretecno.startAnimation(animation_abajo)
 
 
 
