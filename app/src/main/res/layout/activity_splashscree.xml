@@ -2,22 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.SplashscreeActivity"
-    android:background="@color/principal">
+    android:background="@color/principal"
+    tools:context=".ui.activities.SplashscreeActivity">
 
 
     <ImageView
-        android:id="@+id/logosplash"
+        android:id="@+id/logo1"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/altologo"
-        android:src="@drawable/logo_aph"
         android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo_aph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logotecno"
@@ -28,18 +29,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logosplash" />
+        app:layout_constraintTop_toBottomOf="@+id/logo1" />
 
     <ImageView
         android:id="@+id/nombretecno"
         android:layout_width="@dimen/anchonombre"
         android:layout_height="@dimen/altonombre"
+        android:layout_marginBottom="30dp"
         android:src="@drawable/nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logotecno"
-        android:layout_marginBottom="30dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/logotecno" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
