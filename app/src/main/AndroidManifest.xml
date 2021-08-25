@@ -20,6 +20,7 @@
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
             android:name=".ui.activities.MainActivity"
+            android:exported="true"/>
         <activity
             android:name=".ui.activities.Registro_Activity"
             android:exported="true" />
