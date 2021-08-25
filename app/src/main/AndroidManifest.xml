@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".ui.activities.Main_Activity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.Registro_Activity"
             android:exported="true" />
         <activity
