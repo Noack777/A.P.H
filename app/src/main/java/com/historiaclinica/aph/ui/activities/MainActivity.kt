@@ -4,18 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.historiaclinica.aph.R
-import kotlinx.android.synthetic.main.fragment_registro.*
+import kotlinx.android.synthetic.main.activity_main.*
 
-class Registro_Activity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_registro)
+        setContentView(R.layout.activity_main)
 
-        btnback2.setOnClickListener {
+        botonadmin.setOnClickListener {
 
-           val intent: Intent =Intent (this, MainActivity::class.java )
+            val intent:Intent = Intent (this, Login_Admin_Activity::class.java)
             startActivity(intent)
-            finish()
 
         }
     }
