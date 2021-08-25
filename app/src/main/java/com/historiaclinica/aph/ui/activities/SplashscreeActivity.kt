@@ -19,13 +19,10 @@ class SplashscreeActivity : AppCompatActivity() {
 
 
         val animation = AnimationUtils.loadAnimation(this, R.anim.animacion)
-        val animation_abajo = AnimationUtils.loadAnimation(this, R.anim.animacion_abajo)
+        val animation1 = AnimationUtils.loadAnimation(this, R.anim.animacion_abajo)
         logo1.startAnimation(animation)
-        logotecno.startAnimation(animation_abajo)
-        nombretecno.startAnimation(animation_abajo)
-
-
-
+        logotecno.startAnimation(animation1)
+        nombretecno.startAnimation(animation1)
 
         val intent = Intent(this, MainActivity::class.java)
 

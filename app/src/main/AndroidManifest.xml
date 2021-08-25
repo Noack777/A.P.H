@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.Registro_Activity"
             android:exported="true" />
         <activity
@@ -41,18 +44,14 @@
 
         <activity
             android:name=".ui.activities.SplashscreeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activities.MainActivity"
-            android:exported="true">
 
-        </activity>
     </application>
 
 </manifest>
