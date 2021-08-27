@@ -9,10 +9,10 @@
     <string name="numero">No. Automatico</string>
     <string name="titulologin">¡Bienvenido a:</string>
     <string name="subtitlelogin">Tu Historia Clinica !Prehospitalaria!</string>
-    <string name="insertecodigo">Codigo</string>
+    <string name="Usuario">Usuario</string>
     <string name="codigoadmin">Codigo, Admin</string>
     <string name="botoningresar">INGRESAR</string>
-    <string name="ingresoAdmin">¿Eres Admin?, Ingresa por aqui</string>
+    <string name="ingresoAdmin">¿Aún no te registras? Registrate</string>
     <string name="tituloadmin">Bienvenido Admin</string>
     <string name="subtitleadmin1">Ingresa con tu codigo único y registra a tus compañeros</string>
     <string name="subtitleadmin2">de trabajo</string>
@@ -27,6 +27,7 @@
     <string name="google_maps_key">maps</string>
     <string name="todo">TODO</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Contraseña">Ingresa tu contraseña</string>
 
 
 </resources>

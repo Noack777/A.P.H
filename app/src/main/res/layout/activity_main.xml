@@ -45,8 +45,23 @@
             android:layout_width="@dimen/anchologueo"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="90dp"
-            android:hint="@string/insertecodigo"
+            android:layout_marginTop="50dp"
+            android:hint="@string/Usuario"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/Contrasenia"
+            android:layout_width="@dimen/anchologueo"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Contraseña"
             android:minHeight="48dp"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"/>
@@ -54,7 +69,6 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp"/>
-
 
 
         //boton para loguear el usuario
@@ -76,7 +90,7 @@
             android:textColor="@color/white"
             android:background="@drawable/boton_login"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 
