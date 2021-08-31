@@ -13,7 +13,7 @@ class Login_Admin_Activity : AppCompatActivity() {
 
         btnback.setOnClickListener {
 
-            val intent:Intent = Intent (this, MainActivity::class.java)
+            val intent:Intent = Intent (this, AuthActivity::class.java)
             startActivity(intent)
             finish()
 

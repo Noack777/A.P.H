@@ -1,12 +1,10 @@
 package com.historiaclinica.aph.ui.activities
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import com.historiaclinica.aph.R
 import kotlinx.android.synthetic.main.activity_splashscree.*
 
@@ -24,7 +22,7 @@ class SplashscreeActivity : AppCompatActivity() {
         logotecno.startAnimation(animation1)
         nombretecno.startAnimation(animation1)
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, AuthActivity::class.java)
 
         animation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(p0: Animation?) {

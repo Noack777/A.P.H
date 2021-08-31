@@ -13,7 +13,7 @@ class Registro_Activity : AppCompatActivity() {
 
         btnback2.setOnClickListener {
 
-           val intent: Intent =Intent (this, MainActivity::class.java )
+           val intent: Intent =Intent (this, AuthActivity::class.java )
             startActivity(intent)
             finish()
 

@@ -11,7 +11,7 @@
         tools:layout="@layout/activity_splashscree" />
     <fragment
         android:id="@+id/botonlogin"
-        android:name="com.historiaclinica.aph.ui.activities.MainActivity"
+        android:name="com.historiaclinica.aph.ui.activities.AuthActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main"
         tools:ignore="DuplicateIds">
