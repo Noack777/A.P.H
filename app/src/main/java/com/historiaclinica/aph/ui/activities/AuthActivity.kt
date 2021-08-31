@@ -22,6 +22,14 @@ class AuthActivity : AppCompatActivity() {
 
         // Setup
         setup()
+
+        //Boton Registro
+        botonadmin.setOnClickListener {
+            val intent:Intent=Intent(this, Login_Admin_Activity::class.java)
+            startActivity(intent)
+
+
+        }
     }
 
     private fun setup() {
@@ -69,4 +77,5 @@ class AuthActivity : AppCompatActivity() {
         startActivity(inicioIntent)
 
     }
+
 }
