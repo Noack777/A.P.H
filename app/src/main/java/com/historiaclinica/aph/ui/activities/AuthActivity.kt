@@ -69,4 +69,6 @@ class AuthActivity : AppCompatActivity() {
         startActivity(inicioIntent)
 
     }
+
+   
 }
