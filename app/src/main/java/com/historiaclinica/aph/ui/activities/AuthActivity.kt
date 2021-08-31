@@ -2,6 +2,7 @@ package com.historiaclinica.aph.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -23,7 +24,16 @@ class AuthActivity : AppCompatActivity() {
 
         // Setup
         setup()
+
+        //Boton Registro
+        botonadmin.setOnClickListener {
+            val intent: Intent = Intent(this, Login_Admin_Activity::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
 
     private fun setup() {
 
@@ -70,6 +80,4 @@ class AuthActivity : AppCompatActivity() {
         startActivity(inicioIntent)
 
     }
-
-   
 }
