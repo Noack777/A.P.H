@@ -57,6 +57,11 @@
             android:layout_width="match_parent"
             android:layout_height="30dp" />
 
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           app:endIconMode="password_toggle">
 
         <EditText
             android:id="@+id/Contrasenia"
@@ -72,6 +77,8 @@
             android:textColor="@color/black"
             android:visibility="visible"
             tools:visibility="visible" />
+
+       </com.google.android.material.textfield.TextInputLayout>
 
         <Space
             android:layout_width="match_parent"
