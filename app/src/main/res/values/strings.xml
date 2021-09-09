@@ -14,7 +14,7 @@
     <string name="botoningresar">INGRESAR</string>
     <string name="ingresoAdmin">¿Aún no te registras? Registrate</string>
     <string name="tituloadmin">Bienvenido !Registrate por aca!</string>
-    <string name="subtitleadmin1">Ingresa con tu codigo único y registra a tus compañeros</string>
+    <string name="subtitleadmin1">Ingresa Un nombre de Usuario y una contraseña!</string>
     <string name="subtitleadmin2">de trabajo</string>
     <string name="tituloregistro">¡Solo tu Tienes el Poder!</string>
     <string name="subtitleregistro">Registra a un Nuevo Usuario</string>
