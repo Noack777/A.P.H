@@ -21,14 +21,10 @@ class Login_Admin_Activity : AppCompatActivity() {
 
         }
 
-        setup()
-    }
-
-    private fun setup() {
         botonloginadmin.setOnClickListener {
             if (nombreUsua.text!!.isNotEmpty() && RContrasenia.text!!.isNotEmpty()) {
-            FirebaseAuth.getInstance().createUserWithEmailAndPassword(nombreUsua.text.toString()
-                ,RContrasenia.text.toString()).addOnCompleteListener {
+                FirebaseAuth.getInstance().createUserWithEmailAndPassword(nombreUsua.text.toString()
+                    ,RContrasenia.text.toString()).addOnCompleteListener {
 
                     if (it.isSuccessful){
                         regbien(it.result?.user?.email ?: "",ProviderType.BASIC)
@@ -40,6 +36,8 @@ class Login_Admin_Activity : AppCompatActivity() {
             }
         }
     }
+
+
 
     private fun alerta(){
         val builder = AlertDialog.Builder(this)
