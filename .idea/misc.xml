@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_auth.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_splashscree.xml" value="0.22894736842105262" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_confi.xml" value="0.22894736842105262" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_confi_detail_dialog.xml" value="0.22894736842105262" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_inicio.xml" value="0.1" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_login__admin.xml" value="0.22894736842105262" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_registro.xml" value="0.22894736842105262" />
