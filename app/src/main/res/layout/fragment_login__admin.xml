@@ -39,68 +39,96 @@
             android:layout_marginTop="10dp"
             android:textSize="@dimen/tamaniosubtitilologin"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/subtitleadmin2"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:textSize="@dimen/tamaniosubtitilologin"/>
-
-        <EditText
-            android:id="@+id/codigoadmin"
-            android:layout_width="@dimen/anchologueo"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="90dp"
-            android:hint="@string/codigoadmin"
-            android:minHeight="48dp" />
-
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp"
-            android:elevation="0dp"
-            android:layout_gravity="center"
-            android:background="@color/colorboton">
-
-            <Button
-                android:id="@+id/botonloginadmin"
-                android:layout_width="@dimen/anchobotonlogin"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#CAF0F8"
-                android:text="@string/botoningresar"
-                android:textColor="@color/black"/>
-        </androidx.cardview.widget.CardView>
-
-        <Space
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp"
-            android:elevation="0dp"
-            android:layout_gravity="center"
-            android:background="@color/colorboton" >
 
-            <Button
-                android:id="@+id/btnback"
-                android:layout_width="150dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombreUsua"
+                android:layout_width="@dimen/anchologueo"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#CAF0F8"
-                android:text="ATRAS"
-                android:textColor="@color/black"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/username"
+                android:minHeight="48dp"
+                android:textColor="@color/black" />
 
-        </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endIconMode = "password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/RContrasenia"
+                    android:layout_width="@dimen/anchologueo"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/white"
+                    android:hint= "@string/Contraseña" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="0dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorboton">
+
+                <Button
+                    android:id="@+id/btnback"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CAF0F8"
+                    android:text="ATRAS"
+                    android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="0dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorboton" >
+
+                <Button
+                    android:id="@+id/botonloginadmin"
+                    android:layout_width="@dimen/anchobotonlogin"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#CAF0F8"
+                    android:text="@string/botoningresar"
+                    android:textColor="@color/black"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     </LinearLayout>
+
+
 
 </FrameLayout>
