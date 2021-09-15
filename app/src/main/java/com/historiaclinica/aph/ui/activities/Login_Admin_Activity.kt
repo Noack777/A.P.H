@@ -22,22 +22,34 @@ class Login_Admin_Activity : AppCompatActivity() {
         }
 
         botonloginadmin.setOnClickListener {
-            if (nombreUsua.text!!.isNotEmpty() && RContrasenia.text!!.isNotEmpty()) {
-                FirebaseAuth.getInstance().createUserWithEmailAndPassword(nombreUsua.text.toString()
-                    ,RContrasenia.text.toString()).addOnCompleteListener {
+            if (RContrasenia.text.toString().equals(coContrasenia.text.toString())){
+                if (nombreUsua.text!!.isNotEmpty() && RContrasenia.text!!.isNotEmpty()) {
+                    FirebaseAuth.getInstance().createUserWithEmailAndPassword(
+                        nombreUsua.text.toString(), RContrasenia.text.toString()
+                    ).addOnCompleteListener {
 
-                    if (it.isSuccessful){
-                        regbien(it.result?.user?.email ?: "",ProviderType.BASIC)
-                    }else{
-                        alerta()
+                        if (it.isSuccessful) {
+                            regbien(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        } else {
+                            alerta()
+                        }
                     }
                 }
-
+            }else{
+                contranoCoin()
             }
         }
     }
 
+    private fun contranoCoin(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error las contraseñas no coinciden")
+        builder.setPositiveButton("aceptar",null)
+        val dialog : AlertDialog =builder.create()
+        dialog.show()
 
+    }
 
     private fun alerta(){
         val builder = AlertDialog.Builder(this)
