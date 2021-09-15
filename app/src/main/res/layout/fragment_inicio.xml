@@ -105,10 +105,157 @@
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
 
+                    //Inicio de Bloque uno de Informacion
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/bloque1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/b1_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/fecha"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b1_date2"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ambulancia"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tripulacion"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/b1_date3"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/espacioentretitulos"
+                        android:hint="@string/conductor"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b1_date4"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/aph"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <EditText
+                        android:id="@+id/b1_date5"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/estudiante"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b1_date6"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="@string/otro"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/evaluacion"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/b1_date7"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="@dimen/largocuadrado"
+                        android:layout_margin="20sp"
+                        android:hint="@string/descripcion"/>
+
+                    //Fin de Informacion del Bloque 1
+
+                    //Inicio de Informacion Bloque 2
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/t_atencion"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b2_date1"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/despacho"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b2_date2"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/en_la_escena"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b2_date3"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/c_atencion"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b2_date4"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/f_atencion"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    //Final de Informacion Bloque 2
+
+                    //Inicio de Informacion Bloque 3
+
+
+
+
+
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             </ScrollView>
 

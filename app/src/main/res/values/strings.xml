@@ -29,6 +29,32 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Contraseña">Ingresa tu contraseña</string>
     <string name="subtitle_inicio"> Ingresa los Datos Solicitados </string>
+    <string name="bloque1"> Informacion de la tripulación y el Turno </string>
+        <string name="fecha">DD/MM/AA</string>
+        <string name="ambulancia">Ambulancia</string>
+        <string name="tripulacion">Tripulacion</string>
+        <string name="conductor">Conductor</string>
+        <string name="aph">APH</string>
+        <string name="estudiante">Estudiante</string>
+        <string name="otro">Otro</string>
+        <string name="evaluacion">Evaluacion de la Escena</string>
+        <string name="descripcion">Describe Brevemente la Evaluación de la Escena</string>
+
+    //Inicio de informacion del bloque 2
+
+    <string name="t_atencion">Tiempo de Atención</string>
+    <string name="despacho">Despacho</string>
+    <string name="en_la_escena">En La Escena</string>
+    <string name="c_atencion">Centro de Atencion (Destino)</string>
+    <string name="f_atencion">Finalización de la Atención</string>
+
+    //Inicio de Informacion del bloque 3
+
+    <string name="d_personal">Datos Personales</string>
+    <string name="p_apellido">Primer Apellido</string>
+    <string name="s_apellido">Segundo Apellido</string>
+    <string name="nombres">Nombres</string>
+
 
 
 </resources>
