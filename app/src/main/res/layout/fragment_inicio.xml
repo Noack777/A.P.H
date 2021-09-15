@@ -41,31 +41,31 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/secundario">
+                    android:background="@color/secundario"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="@string/bienvenidoInicio"
                         android:textSize="@dimen/tamaniotituloinicio"
-                        android:gravity="center"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="10dp"/>
+                        android:layout_height="10dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="@string/subtituloInicio"
-                        android:textStyle="bold"
-                        android:gravity="center"/>
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -75,24 +75,324 @@
                         <TextView
                             android:layout_width="130dp"
                             android:layout_height="20dp"
-                            android:text="@string/subtituloInicio2"
                             android:background="@color/amarillo"
-                            android:textStyle="bold"/>
+                            android:text="@string/subtituloInicio2"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
                         <EditText
                             android:layout_width="125dp"
-                            android:layout_height="40dp"
-                            android:hint="@string/numero"
+                            android:layout_height="48dp"
                             android:layout_marginTop="30dp"
-                            android:textSize="12sp"/>
+                            android:hint="@string/numero"
+                            android:textSize="12sp" />
 
 
                     </RelativeLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/subtitle_inicio"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    //Inicio de bloque uno de informacion
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/bloque1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/b1_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="@string/fecha"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/b1_date2"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/ambulancia"
+                        android:minHeight="48dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tripulacion"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/b1_date3"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/espacioentretitulos"
+                        android:hint="@string/conductor"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/b1_date4"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/aph"
+                        android:minHeight="48dp" />
+
+
+                    <EditText
+                        android:id="@+id/b1_date5"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/estudiante"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/b1_date6"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/otro"
+                        android:minHeight="48dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/evaluacion"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/b1_date7"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="@dimen/largocuadrado"
+                        android:layout_margin="20sp"
+                        android:hint="@string/descripcion" />
+
+                    //Fin de Informacion del Bloque 1
+
+                    //Inicio de Informacion Bloque 2
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/t_atencion"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/b2_date1"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/despacho"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/b2_date2"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/en_la_escena"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/b2_date3"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/c_atencion" />
+
+                    <EditText
+                        android:id="@+id/b2_date4"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/f_atencion" />
+
+                    //Final de Informacion Bloque 2
+
+                    //Inicio de Informacion Bloque 3
+
+                    <TextView
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/d_personal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/b3_date1"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/p_apellido" />
+
+                    <EditText
+                        android:id="@+id/b3_date2"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/s_apellido"/>
+
+                    <EditText
+                        android:id="@+id/b3_date3"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/nombres"/>
+
+                    <EditText
+                        android:id="@+id/b3_date4"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/t_documento"/>
+
+                    <EditText
+                        android:id="@+id/b3_date5"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/n_documento"/>
+
+                    <EditText
+                        android:id="@+id/b3_date6"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/eps"/>
+
+                    <EditText
+                        android:id="@+id/b3_date7"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/m_pre"/>
+
+                    <EditText
+                        android:id="@+id/b3_date8"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/genero"/>
+
+                    <EditText
+                        android:id="@+id/b3_date9"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/f_nacimiento"/>
+
+                    <EditText
+                        android:id="@+id/b3_date10"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/edad"/>
+
+                    <EditText
+                        android:id="@+id/b3_date11"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/ciudad"/>
+
+                    <EditText
+                        android:id="@+id/b3_date12"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/telefono"/>
+
+                    <EditText
+                        android:id="@+id/b3_date13"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/direccion"/>
+
+                    <EditText
+                        android:id="@+id/b3_date14"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/f_a"/>
+
+                    <EditText
+                        android:id="@+id/b3_date15"
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/contacto"/>
+
+                    //Final de Informacion bloque 3
+                    //Final de Informacion bloque 3
 
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             </ScrollView>
 

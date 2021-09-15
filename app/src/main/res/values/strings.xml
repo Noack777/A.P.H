@@ -29,5 +29,66 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Contraseña">Ingresa tu contraseña</string>
     <string name="confiContra">Confirma tu contraseña</string>
+    <string name="subtitle_inicio"> Ingresa los Datos Solicitados </string>
+
+    //Inicio de informacion bloque 1 datos del 1 al 8
+
+    <string name="bloque1"> Informacion de la tripulación y el Turno </string>
+        <string name="fecha">DD/MM/AA</string> //date 1
+        <string name="ambulancia">Ambulancia</string> //date 2
+        <string name="tripulacion">Tripulacion</string> //date 3
+        <string name="conductor">Conductor</string> //date 4
+        <string name="aph">APH</string> //date 5
+        <string name="estudiante">Estudiante</string> //date 6
+        <string name="otro">Otro</string> //date 7
+        <string name="evaluacion">Evaluacion de la Escena</string>
+        <string name="descripcion">Describe Brevemente la Evaluación de la Escena</string> //date 8
+
+    //Inicio de informacion del bloque 2 datos 1 al 4
+
+    <string name="t_atencion">Tiempo de Atención</string>
+    <string name="despacho">Despacho</string> //date 1
+    <string name="en_la_escena">En La Escena</string> //date 2
+    <string name="c_atencion">Centro de Atencion (Destino)</string> //date 3
+    <string name="f_atencion">Finalización de la Atención</string> //date 4
+
+    //Inicio de Informacion del bloque 3 Datos del 1 al 15
+
+    <string name="d_personal">Datos Personales</string>
+    <string name="p_apellido">Primer Apellido</string> //date 1
+    <string name="s_apellido">Segundo Apellido</string> //date 2
+    <string name="nombres">Nombres</string> //date 3
+    <string name="t_documento">Tipo de Documento</string> //date 4
+    <string name="n_documento">Numero de Documento</string> //date 5
+    <string name="eps">Eps</string> //date 6
+    <string name="m_pre">Medicina Prepagada</string> //date 7
+    <string name="genero">Genero</string> //date 8
+    <string name="f_nacimiento">Fecha de Nacimiento</string> //date 9
+    <string name="edad">Edad (Años)</string> //date 10
+    <string name="ciudad">Ciudad</string> //date 11
+    <string name="telefono">Telefono</string> //date 12
+    <string name="direccion">Dirección</string> //date 13
+    <string name="f_a">Familiar/Acompañante</string> //date 14
+    <string name="contacto">Telefono de Contacto</string> //date 15
+
+    //Inicio de Informacion del bloque 4
+    
+    <string name="m_consulta">Motivo de la Consulta</string>
+    <string name="descripcion_2">Describe Brevemente el Motivo de la Consulta</string> //date 1
+    <string name="enfermedad">Enfermedad Actual</string>
+    <string name="descripcion_3">Describe Brevemente la Enfermedad Actual</string> //date 2
+    <string name="r_sistemas">Revision por Sistemas</string>
+    <string name="c_1"></string> //date 3
+    <string name="c_2"></string> //date 4
+    <string name="c_3"></string> //date 5
+    <string name="antecedentes">Antecedentes</string>
+    <string name="patologico">Patológico</string> //date 6
+    <string name="quirurgico">Quirúrgico</string> //date 7
+    <string name="alergico">Alérgico</string> //date 8
+    <string name="farmacologico">Farmacológico</string> //date 9
+
+
+
+>>>>>>> design
 
 </resources>
