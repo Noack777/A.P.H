@@ -22,7 +22,7 @@ class Login_Admin_Activity : AppCompatActivity() {
         }
 
         botonloginadmin.setOnClickListener {
-            if (RContrasenia == coContrasenia){
+            if (RContrasenia.text.toString().equals(coContrasenia.text.toString())){
                 if (nombreUsua.text!!.isNotEmpty() && RContrasenia.text!!.isNotEmpty()) {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                         nombreUsua.text.toString(), RContrasenia.text.toString()
