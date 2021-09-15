@@ -41,7 +41,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="20dp"
             />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -62,7 +62,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="15dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -77,49 +77,80 @@
                     android:layout_marginTop="50dp"
                     android:backgroundTint="@color/white"
                     android:hint= "@string/Contraseña" />
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:elevation="0dp"
-                    android:layout_gravity="center"
-                    android:background="@color/colorboton">
-
-                <Button
-                    android:id="@+id/btnback"
-                    android:layout_width="149dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#CAF0F8"
-                    android:text="ATRAS"
-                    android:textColor="@color/black" />
-
-                </androidx.cardview.widget.CardView>
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"/>
+                    android:layout_height="15dp" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:elevation="0dp"
-                    android:layout_gravity="center"
-                    android:background="@color/colorboton" >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:endIconMode = "password_toggle">
 
-                <Button
-                    android:id="@+id/botonloginadmin"
-                    android:layout_width="@dimen/anchobotonlogin"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#CAF0F8"
-                    android:text="@string/botoningresar"
-                    android:textColor="@color/black"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/coContrasenia"
+                        android:layout_width="@dimen/anchologueo"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:backgroundTint="@color/white"
+                        android:hint="@string/confiContra" />
 
-                </androidx.cardview.widget.CardView>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="0dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorboton">
+
+                        <Button
+                            android:id="@+id/btnback"
+                            android:layout_width="149dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#CAF0F8"
+                            android:text="ATRAS"
+                            android:textColor="@color/black" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:elevation="0dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorboton" >
+
+                        <Button
+                            android:id="@+id/botonloginadmin"
+                            android:layout_width="@dimen/anchobotonlogin"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#CAF0F8"
+                            android:text="@string/botoningresar"
+                            android:textColor="@color/black"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="hint" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
 
             </com.google.android.material.textfield.TextInputLayout>
 
