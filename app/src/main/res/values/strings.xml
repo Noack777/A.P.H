@@ -71,7 +71,7 @@
     <string name="f_a">Familiar/Acompañante</string> //date 14
     <string name="contacto">Telefono de Contacto</string> //date 15
 
-    //Inicio de Informacion del bloque 4
+    //Inicio de Informacion del bloque 4 Datos del 1 al 16
     
     <string name="m_consulta">Motivo de la Consulta</string>
     <string name="descripcion_2">Describe Brevemente el Motivo de la Consulta</string> //date 1
@@ -86,9 +86,13 @@
     <string name="quirurgico">Quirúrgico</string> //date 7
     <string name="alergico">Alérgico</string> //date 8
     <string name="farmacologico">Farmacológico</string> //date 9
+    <string name="toxico">Tóxicos</string> //date 10
+    <string name="host">Hospitalizacioes</string> //date 11
+    <string name="ocupacional">Ocupacionales</string> //date 12
+    <string name="familiares">Familiares</string> //date 13
+    <string name="gineco">Gineco-obstétricos</string> //date 14
+    <string name="trauma">Traumáticos</string> //date 15
+    <string name="otros">Otros</string> //date 16
 
-
-
->>>>>>> design
 
 </resources>

@@ -75,7 +75,6 @@
                         <TextView
                             android:layout_width="130dp"
                             android:layout_height="20dp"
-                            android:background="@color/amarillo"
                             android:text="@string/subtituloInicio2"
                             android:textColor="@color/black"
                             android:textStyle="bold" />
@@ -85,7 +84,7 @@
                             android:layout_height="48dp"
                             android:layout_marginTop="30dp"
                             android:hint="@string/numero"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"/>
 
 
                     </RelativeLayout>
@@ -107,6 +106,7 @@
 
                     //Inicio de bloque uno de informacion
 
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -114,24 +114,41 @@
                         android:text="@string/bloque1"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
-                    <EditText
-                        android:id="@+id/b1_date1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:hint="@string/fecha"
-                        android:minHeight="48dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
 
-                    <EditText
-                        android:id="@+id/b1_date2"
-                        android:layout_width="@dimen/anchogen"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/ambulancia"
-                        android:minHeight="48dp" />
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/b1_date1"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fecha"
+                            android:minHeight="48dp"
+                            android:layout_marginRight="50dp"/>
+
+
+                        <EditText
+                            android:id="@+id/b1_date2"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/ambulancia"
+                            android:minHeight="48dp" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
 
 
                     <TextView
@@ -143,6 +160,13 @@
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
                     <EditText
                         android:id="@+id/b1_date3"
@@ -161,6 +185,14 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/aph"
                         android:minHeight="48dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
 
                     <EditText
@@ -181,6 +213,12 @@
                         android:hint="@string/otro"
                         android:minHeight="48dp" />
 
+                </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -192,12 +230,21 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
                     <EditText
                         android:id="@+id/b1_date7"
+                        android:background="@drawable/stylo_bordes"
                         android:layout_width="@dimen/anchocuadrado"
                         android:layout_height="@dimen/largocuadrado"
                         android:layout_margin="20sp"
                         android:hint="@string/descripcion" />
+
+                </LinearLayout>
 
                     //Fin de Informacion del Bloque 1
 
@@ -217,6 +264,12 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
                     <EditText
                         android:id="@+id/b2_date1"
                         android:layout_width="@dimen/anchogen"
@@ -235,6 +288,14 @@
                         android:hint="@string/en_la_escena"
                         android:minHeight="48dp" />
 
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
                     <EditText
                         android:id="@+id/b2_date3"
                         android:layout_width="@dimen/anchogen"
@@ -251,9 +312,16 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/f_atencion" />
 
+                </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
                     //Final de Informacion Bloque 2
 
                     //Inicio de Informacion Bloque 3
+
+
 
                     <TextView
                         android:layout_width="@dimen/anchogen"
@@ -264,6 +332,16 @@
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
 
                     <EditText
                         android:id="@+id/b3_date1"
@@ -281,6 +359,13 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/s_apellido"/>
 
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
                     <EditText
                         android:id="@+id/b3_date3"
                         android:layout_width="@dimen/anchogen"
@@ -296,6 +381,14 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/t_documento"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
                     <EditText
                         android:id="@+id/b3_date5"
@@ -313,6 +406,14 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/eps"/>
 
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
                     <EditText
                         android:id="@+id/b3_date7"
                         android:layout_width="@dimen/anchogen"
@@ -328,6 +429,14 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/genero"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
                     <EditText
                         android:id="@+id/b3_date9"
@@ -345,6 +454,13 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/edad"/>
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
                     <EditText
                         android:id="@+id/b3_date11"
                         android:layout_width="@dimen/anchogen"
@@ -360,6 +476,14 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/telefono"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
                     <EditText
                         android:id="@+id/b3_date13"
@@ -377,6 +501,8 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/f_a"/>
 
+                </LinearLayout>
+
                     <EditText
                         android:id="@+id/b3_date15"
                         android:layout_width="@dimen/anchogen"
@@ -385,8 +511,113 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/contacto"/>
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
                     //Final de Informacion bloque 3
-                    //Final de Informacion bloque 3
+                    //Inicio de Informacion bloque 4 "Motivo de la Consulta"
+
+                    <TextView
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/m_consulta"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b4_date1"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/descripcion_2"
+                        android:background="@drawable/stylo_bordes"/>
+
+                    //"Enfermedad Actual
+
+                    <TextView
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/enfermedad"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b4_date2"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/descripcion_3"
+                        android:background="@drawable/stylo_bordes"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/r_sistemas"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <EditText
+                        android:id="@+id/b4_date3"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/c_1"/>
+
+                    <EditText
+                        android:id="@+id/b4_date4"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/c_2"/>
+
+                    <EditText
+                        android:id="@+id/b4_date5"
+                        android:layout_width="@dimen/anchocuadrado"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/c_3"/>
+
+                    //Antecedentes
+
+                    <TextView
+                        android:layout_width="@dimen/anchogen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/antecedentes"
+                        android:textColor="@color/black"/>
+
+
+
 
 
                 </LinearLayout>
