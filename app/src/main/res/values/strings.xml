@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Historia clinica A.P.H</string>
 
-    <string name="iniciargrabacion">Pulsa para iniciar a Grabar</string>
+    <string name="pulsar">Pulsa para:</string>
+    <string name="grabar">Grabar</string>
+    <string name="detener">Detener</string>
+    <string name="reproducir">Reproducir</string>
 
     <string name="bienvenidoInicio">¡Bienvenido!</string>
     <string name="subtituloInicio">¡Que no se escape nada de información!</string>
@@ -10,14 +13,11 @@
     <string name="titulologin">¡Bienvenido a:</string>
     <string name="subtitlelogin">Tu Historia Clinica !Prehospitalaria!</string>
     <string name="Usuario">Usuario</string>
-    <string name="codigoadmin">Codigo, Admin</string>
     <string name="botoningresar">INGRESAR</string>
     <string name="ingresoAdmin">¿Aún no te registras? Registrate</string>
     <string name="tituloadmin">Bienvenido !Registrate por aca!</string>
     <string name="subtitleadmin1">Ingresa Un nombre de Usuario y una contraseña!</string>
     <string name="subtitleadmin2">de trabajo</string>
-    <string name="tituloregistro">¡Solo tu Tienes el Poder!</string>
-    <string name="subtitleregistro">Registra a un Nuevo Usuario</string>
     <string name="username">Nombre de Usuario</string>
     <string name="correo">Correo Universitario</string>
     <string name="codigoregistro">Codigo</string>

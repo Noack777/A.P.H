@@ -13,18 +13,121 @@
             android:orientation="vertical"
             android:background="@color/principal">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/iniciargrabacion"
+                android:text="@string/pulsar"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:textColor="@color/white"
                 android:gravity="center"/>
 
+            </LinearLayout>
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+                android:layout_height="10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grabar"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detener"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/textView"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reproducir"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="50dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                //Boton para Grabar
+
+                <Button
+                    android:id="@+id/btn_grabar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/icon_grabar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                //Boton para detener Grabacion
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/icon_stop"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_reproducir"
+                    app:layout_constraintStart_toEndOf="@+id/btn_grabar"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                //Boton para reproducir Grabacion
+
+                <Button
+                    android:id="@+id/btn_reproducir"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/icon_play"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
 
 
             <ScrollView
@@ -565,6 +668,10 @@
                         android:layout_marginTop="10dp"
                         android:hint="@string/descripcion_3"
                         android:background="@drawable/stylo_bordes"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
