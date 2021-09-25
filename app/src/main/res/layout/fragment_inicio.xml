@@ -50,7 +50,8 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="0dp"
-                    android:layout_marginLeft="60dp"/>
+                    android:layout_marginLeft="60dp"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,7 +63,8 @@
                     app:layout_constraintEnd_toStartOf="@+id/textView"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
                     tools:layout_editor_absoluteY="0dp"
-                    android:layout_marginLeft="15dp"/>
+                    android:layout_marginLeft="15dp"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -101,7 +103,8 @@
                     android:layout_marginLeft="50dp"
                     android:background="@drawable/icon_grabar"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 //Boton para detener Grabacion
 
@@ -112,7 +115,8 @@
                     android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 //Boton para reproducir Grabacion
 
@@ -123,7 +127,8 @@
                     android:layout_marginRight="50dp"
                     android:background="@drawable/icon_play"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
