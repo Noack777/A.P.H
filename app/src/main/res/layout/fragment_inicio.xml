@@ -101,6 +101,7 @@
                     android:layout_marginLeft="50dp"
                     android:background="@drawable/icon_grabar"
                     app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
                 //Boton para detener Grabacion
