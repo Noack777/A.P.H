@@ -65,7 +65,8 @@
                     app:layout_constraintEnd_toStartOf="@+id/textView"
                     app:layout_constraintHorizontal_bias="0.521"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
 
                 <TextView
@@ -78,7 +79,8 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/textView4"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -90,7 +92,8 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -117,7 +120,7 @@
                     android:layout_marginLeft="50dp"
                     android:background="@drawable/icon_grabar"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
 
@@ -143,7 +146,8 @@
                     android:layout_marginEnd="28dp"
                     android:background="@drawable/icon_play"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 <Button
                     android:id="@+id/btn_detener_repro"
