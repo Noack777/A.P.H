@@ -50,7 +50,8 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="0dp"
-                    android:layout_marginLeft="60dp"/>
+                    android:layout_marginLeft="60dp"
+                    tools:ignore="MissingConstraints" />
 
 
                 <TextView
@@ -64,7 +65,13 @@
                     app:layout_constraintEnd_toStartOf="@+id/textView"
                     app:layout_constraintHorizontal_bias="0.521"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
+<<<<<<< HEAD
                     tools:layout_editor_absoluteY="0dp" />
+=======
+                    tools:layout_editor_absoluteY="0dp"
+                    android:layout_marginLeft="15dp"
+                    tools:ignore="MissingConstraints" />
+>>>>>>> master
 
                 <TextView
                     android:id="@+id/textView"
@@ -118,6 +125,7 @@
                     tools:ignore="SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
+
                 //Boton para detener Grabacion
 
                 //Boton para reproducir Grabacion
@@ -129,7 +137,8 @@
                     android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
 
                 <Button
@@ -148,7 +157,8 @@
                     android:layout_marginEnd="28dp"
                     android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
