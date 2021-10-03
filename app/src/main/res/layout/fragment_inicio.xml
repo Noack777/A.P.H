@@ -65,13 +65,8 @@
                     app:layout_constraintEnd_toStartOf="@+id/textView"
                     app:layout_constraintHorizontal_bias="0.521"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
-<<<<<<< HEAD
                     tools:layout_editor_absoluteY="0dp" />
-=======
-                    tools:layout_editor_absoluteY="0dp"
-                    android:layout_marginLeft="15dp"
-                    tools:ignore="MissingConstraints" />
->>>>>>> master
+
 
                 <TextView
                     android:id="@+id/textView"
