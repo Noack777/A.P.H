@@ -5,6 +5,8 @@
     <string name="grabar">Grabar</string>
     <string name="detener">Detener</string>
     <string name="reproducir">Reproducir</string>
+    <string name="d_repro">Quitar </string>
+
 
     <string name="bienvenidoInicio">¡Bienvenido!</string>
     <string name="subtituloInicio">¡Que no se escape nada de información!</string>

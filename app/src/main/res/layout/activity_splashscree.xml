@@ -20,27 +20,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/logotecno"
-        android:layout_width="@dimen/anchologotecno"
-        android:layout_height="@dimen/anchologotecno"
-        android:layout_marginTop="250dp"
-        android:src="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo1" />
-
-    <ImageView
-        android:id="@+id/nombretecno"
-        android:layout_width="@dimen/anchonombre"
-        android:layout_height="@dimen/altonombre"
-        android:layout_marginBottom="50dp"
-        android:src="@drawable/nombre"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logotecno" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/logotecno"
+            android:layout_width="@dimen/anchologotecno"
+            android:layout_height="@dimen/anchologotecno"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo1" />
+
+        <ImageView
+            android:id="@+id/nombretecno"
+            android:layout_width="@dimen/anchonombre"
+            android:layout_height="@dimen/altonombre"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/nombre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logotecno" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
