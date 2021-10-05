@@ -135,8 +135,8 @@
                     android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
 
                 <Button
@@ -146,8 +146,8 @@
                     android:layout_marginEnd="28dp"
                     android:background="@drawable/icon_play"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <Button
                     android:id="@+id/btn_detener_repro"
@@ -156,8 +156,8 @@
                     android:layout_marginEnd="28dp"
                     android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -168,7 +168,9 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -305,7 +307,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
 
                     <EditText
                         android:id="@+id/b1_date3"
@@ -480,23 +484,27 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
 
-                    <EditText
-                        android:id="@+id/b3_date1"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/p_apellido" />
+                        <EditText
+                            android:id="@+id/b3_date1"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/p_apellido"
+                            tools:ignore="TouchTargetSizeCheck" />
 
-                    <EditText
-                        android:id="@+id/b3_date2"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/s_apellido"/>
+                        <EditText
+                            android:id="@+id/b3_date2"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/s_apellido"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                     </LinearLayout>
                 <LinearLayout
@@ -511,7 +519,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/nombres"/>
+                        android:hint="@string/nombres"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/b3_date4"
@@ -543,7 +552,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/eps"/>
+                        android:hint="@string/eps"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
 
@@ -642,13 +652,21 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+
                     <EditText
                         android:id="@+id/b3_date15"
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/contacto"/>
+                        android:hint="@string/contacto"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
 
                     <Space
                         android:layout_width="match_parent"
@@ -729,7 +747,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/c_1"/>
+                        android:hint="@string/c_1"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/b4_date4"
@@ -745,7 +764,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/c_3"/>
+                        android:hint="@string/c_3"
+                        android:minHeight="48dp" />
 
                     //Antecedentes
 

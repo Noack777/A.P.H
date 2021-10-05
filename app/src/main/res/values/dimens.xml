@@ -15,7 +15,7 @@
     <dimen name="anchonombre">100dp</dimen>
     <dimen name="altonombre">40dp</dimen>
     <dimen name="espacioentretitulos">15dp</dimen>
-    <dimen name="anchogen">200dp</dimen>
+    <dimen name="anchogen">180dp</dimen>
     <dimen name="anchocuadrado">350dp</dimen>
     <dimen name="largocuadrado">150dp</dimen>
 

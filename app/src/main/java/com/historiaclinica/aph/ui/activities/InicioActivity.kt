@@ -6,8 +6,14 @@ import android.media.MediaPlayer
 import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
+import android.view.View
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.inappmessaging.model.Button
 import com.historiaclinica.aph.R
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.IOException
@@ -19,7 +25,27 @@ enum class ProviderType {
 private const val LOG_TAG = "AudioRecordTest"
 private const val REQUEST_RECORD_AUDIO_PERMISSION = 200
 
-class InicioActivity : AppCompatActivity() {
+class InicioActivity : AppCompatActivity() ,View.OnClickListener {
+
+    //Cambio de estado de los botones
+
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+        setContentView(R.layout.fragment_inicio)
+
+    }
+
+    override fun onClick(p0: View?) {
+
+        when(p0?.id)
+        {
+            R.id.btn_grabar -> Toast.makeText(this, "Grabando ",Toast.LENGTH_LONG).show()
+            R.id.btn_detener_repro -> Toast.makeText(this, "Reproducción Detenida ", Toast.LENGTH_LONG).show()
+        }
+
+    }
+
+
 
     //variables grabar audio
     private var fileName: String = ""
@@ -101,4 +127,5 @@ class InicioActivity : AppCompatActivity() {
 
 
     }
+
 }
