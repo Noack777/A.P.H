@@ -8,12 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
+import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.inappmessaging.model.Button
 import com.historiaclinica.aph.R
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.IOException
@@ -25,27 +26,11 @@ enum class ProviderType {
 private const val LOG_TAG = "AudioRecordTest"
 private const val REQUEST_RECORD_AUDIO_PERMISSION = 200
 
-class InicioActivity : AppCompatActivity() ,View.OnClickListener {
-
-    //Cambio de estado de los botones
-
+class InicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.fragment_inicio)
-
     }
-
-    override fun onClick(p0: View?) {
-
-        when(p0?.id)
-        {
-            R.id.btn_grabar -> Toast.makeText(this, "Grabando ",Toast.LENGTH_LONG).show()
-            R.id.btn_detener_repro -> Toast.makeText(this, "Reproducción Detenida ", Toast.LENGTH_LONG).show()
-        }
-
-    }
-
-
 
     //variables grabar audio
     private var fileName: String = ""
@@ -87,11 +72,13 @@ class InicioActivity : AppCompatActivity() ,View.OnClickListener {
 
         //logica boton grabar
         btn_grabar.setOnClickListener {
+            mostrarmensaje()
             recorder = MediaRecorder().apply {
                 setAudioSource(MediaRecorder.AudioSource.MIC)
                 setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
                 setOutputFile(fileName)
                 setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
+
 
                 try {
                     prepare()
@@ -100,11 +87,15 @@ class InicioActivity : AppCompatActivity() ,View.OnClickListener {
                 }
 
                 start()
-            }
+
+           }
+
         }
+
 
         //logica boton detener grabar
         btn_stop.setOnClickListener {
+            mostrarmensaje1()
             recorder?.apply {
                 stop()
                 release()
@@ -114,6 +105,7 @@ class InicioActivity : AppCompatActivity() ,View.OnClickListener {
 
         //logica boton reproducir
         btn_reproducir.setOnClickListener {
+            mostrarmensaje2()
             player = MediaPlayer().apply {
                 try {
                     setDataSource(fileName)
@@ -126,6 +118,30 @@ class InicioActivity : AppCompatActivity() ,View.OnClickListener {
         }
 
 
+    }
+
+    //Acciones del boton de grabar al ser pulsado
+
+    private fun mostrarmensaje() {
+        Toast.makeText(this, "Grabacioón Iniciada", Toast.LENGTH_LONG).show()
+    }
+
+    //Acciones del boton de Detener Grabacion al ser pulsado
+
+    private fun mostrarmensaje1() {
+        Toast.makeText(this, "Grabacioón Detenida", Toast.LENGTH_LONG).show()
+    }
+
+    //Acciones del boton de Reproducir Grabacion al ser pulsado
+
+    private fun mostrarmensaje2() {
+        Toast.makeText(this, "Reproduciendo...", Toast.LENGTH_LONG).show()
+    }
+
+    //Acciones del boton de Pausar Grabacion al ser pulsado
+
+    private fun mostrarmensaje3() {
+        Toast.makeText(this, "Grabación Pausada", Toast.LENGTH_LONG).show()
     }
 
 }

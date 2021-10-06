@@ -779,11 +779,29 @@
                         android:text="@string/antecedentes"
                         android:textColor="@color/black"/>
 
+                    //Boton Para convertir la Informacion a PDF
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+
+                            android:id="@+id/finalizar"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/finalizar"
+                            android:textColor="@color/white"
+                            android:background="@drawable/boton_login"/>                            />
 
 
-
+                    </LinearLayout>
 
                 </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
