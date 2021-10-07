@@ -113,7 +113,7 @@
 
                 //Boton para Grabar
 
-                <Button
+                <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_grabar"
                     android:layout_width="60dp"
                     android:layout_height="60dp"

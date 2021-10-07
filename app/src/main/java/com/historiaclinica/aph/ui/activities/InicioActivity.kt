@@ -11,9 +11,11 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.historiaclinica.aph.R
 import kotlinx.android.synthetic.main.fragment_inicio.*
@@ -71,8 +73,12 @@ class InicioActivity : AppCompatActivity() {
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION)
 
         //logica boton grabar
+
+        var cambio1 = false
+
         btn_grabar.setOnClickListener {
             mostrarmensaje()
+            cambio1 = cambio_icon(btn_grabar, R.raw.animation_grabar, cambio1)
             recorder = MediaRecorder().apply {
                 setAudioSource(MediaRecorder.AudioSource.MIC)
                 setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
@@ -117,6 +123,24 @@ class InicioActivity : AppCompatActivity() {
             }
         }
 
+
+    }
+
+
+    private fun cambio_icon(imageView: LottieAnimationView, animation: Int,cambio1: Boolean) : Boolean {
+
+        if (!cambio1) {
+
+            imageView.setAnimation(animation)
+            imageView.playAnimation()
+        }
+
+        else {
+
+            imageView.setImageResource(R.drawable.icon_grabar)
+        }
+
+        return !cambio1
 
     }
 
