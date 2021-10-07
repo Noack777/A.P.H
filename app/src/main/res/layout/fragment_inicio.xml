@@ -128,7 +128,7 @@
 
                 //Boton para reproducir Grabacion
 
-                <Button
+                <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_stop"
                     android:layout_width="60dp"
                     android:layout_height="60dp"

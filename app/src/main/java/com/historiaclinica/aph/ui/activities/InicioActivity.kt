@@ -69,11 +69,12 @@ class InicioActivity : AppCompatActivity() {
 
         //logica boton grabar
 
+        var cambio = false
         var cambio1 = false
 
         btn_grabar.setOnClickListener {
             mostrarmensaje()
-            cambio1 = cambio_icon(btn_grabar, R.raw.animation_grabar, cambio1)
+            cambio = cambio_icon(btn_grabar, R.raw.animatio_icon_grabar2, cambio)
             recorder = MediaRecorder().apply {
                 setAudioSource(MediaRecorder.AudioSource.MIC)
                 setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
@@ -96,7 +97,9 @@ class InicioActivity : AppCompatActivity() {
 
         //logica boton detener grabar
         btn_stop.setOnClickListener {
+
             mostrarmensaje1()
+            cambio1 = cambio_icon1(btn_stop, R.raw.animation_stop1, cambio1)
             recorder?.apply {
                 stop()
                 release()
@@ -122,6 +125,7 @@ class InicioActivity : AppCompatActivity() {
 
             player?.release()
             player = null
+            mostrarmensaje3()
 
         }
 
@@ -129,9 +133,12 @@ class InicioActivity : AppCompatActivity() {
     }
 
 
-    private fun cambio_icon(imageView: LottieAnimationView, animation: Int,cambio1: Boolean) : Boolean {
 
-        if (!cambio1) {
+    //Acciones del boton de grabar al ser pulsado
+
+    private fun cambio_icon(imageView: LottieAnimationView, animation: Int,cambio: Boolean) : Boolean {
+
+        if (!cambio) {
 
             imageView.setAnimation(animation)
             imageView.playAnimation()
@@ -142,21 +149,36 @@ class InicioActivity : AppCompatActivity() {
             imageView.setImageResource(R.drawable.icon_grabar)
         }
 
-        return !cambio1
-
-    }
-
-    //Acciones del boton de grabar al ser pulsado
+        return !cambio }
 
     private fun mostrarmensaje() {
         Toast.makeText(this, "Grabación Iniciada", Toast.LENGTH_LONG).show()
     }
+//Final
 
     //Acciones del boton de Detener Grabacion al ser pulsado
+
+    private fun cambio_icon1(imageView: LottieAnimationView, animation: Int,cambio1: Boolean) : Boolean {
+
+        if (!cambio1) {
+
+            imageView.setAnimation(animation)
+            imageView.playAnimation()
+        }
+
+        else {
+
+            imageView.setImageResource(R.drawable.icon_stop)
+        }
+
+        return !cambio1 }
 
     private fun mostrarmensaje1() {
         Toast.makeText(this, "Grabación Detenida", Toast.LENGTH_LONG).show()
     }
+
+    //Final
+
 
     //Acciones del boton de Reproducir Grabacion al ser pulsado
 
