@@ -58,11 +58,6 @@ class InicioActivity : AppCompatActivity() {
         if (!permissionToRecordAccepted) finish()
     }
 
-    private fun stopPlaying() {
-        player?.release()
-        player = null
-    }
-
     override fun onCreate(icicle: Bundle?) {
         super.onCreate(icicle)
         setContentView(R.layout.fragment_inicio)
@@ -123,6 +118,13 @@ class InicioActivity : AppCompatActivity() {
             }
         }
 
+        btn_detener_repro.setOnClickListener {
+
+            player?.release()
+            player = null
+
+        }
+
 
     }
 
@@ -147,13 +149,13 @@ class InicioActivity : AppCompatActivity() {
     //Acciones del boton de grabar al ser pulsado
 
     private fun mostrarmensaje() {
-        Toast.makeText(this, "Grabacioón Iniciada", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Grabación Iniciada", Toast.LENGTH_LONG).show()
     }
 
     //Acciones del boton de Detener Grabacion al ser pulsado
 
     private fun mostrarmensaje1() {
-        Toast.makeText(this, "Grabacioón Detenida", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Grabación Detenida", Toast.LENGTH_LONG).show()
     }
 
     //Acciones del boton de Reproducir Grabacion al ser pulsado
@@ -165,7 +167,7 @@ class InicioActivity : AppCompatActivity() {
     //Acciones del boton de Pausar Grabacion al ser pulsado
 
     private fun mostrarmensaje3() {
-        Toast.makeText(this, "Grabación Pausada", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Reproducción Finalizada", Toast.LENGTH_LONG).show()
     }
 
 }
