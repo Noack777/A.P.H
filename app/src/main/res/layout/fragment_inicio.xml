@@ -139,7 +139,7 @@
                     tools:layout_editor_absoluteY="0dp" />
 
 
-                <Button
+                <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_reproducir"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -149,12 +149,12 @@
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
-                <Button
+                <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_detener_repro"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="28dp"
-                    android:background="@drawable/icon_stop"
+                    android:background="@drawable/icon_stop1"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
