@@ -5,7 +5,6 @@ Date   07/10/2021
 BACKENT
  */
 
-
 package com.historiaclinica.aph.ui.activities
 
 import android.Manifest
@@ -43,10 +42,6 @@ import java.util.*
 enum class ProviderType {
     BASIC
 }
-//variables guardar pdf
-
-
-
 
 //varibles grabar audio
 private const val LOG_TAG = "AudioRecordTest"
@@ -54,44 +49,17 @@ private const val REQUEST_RECORD_AUDIO_PERMISSION = 200
 
 class InicioActivity : AppCompatActivity() {
 
-    private lateinit var et_pdf_data : EditText
-    private lateinit var btn_generar_Pdf : EditText
-    private val STORAGE_CODE = 1001
-
-
-    private fun savePDF() {
-        val mDoc = Document()
-        val mFileName = SimpleDateFormat("yyyHHdd_HHmmss", Locale.getDefault())
-            .format(System.currentTimeMillis())
-
-        val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
-
-        try {
-
-            PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
-            mDoc.open()
-
-            val data = et_pdf_data.text.toString().trim()
-            mDoc.addAuthor("TecnoDesing")
-            mDoc.add(Paragraph(data))
-            mDoc.close()
-            Toast.makeText(this, "$mFileName.pdf\n es creado  en \n $mFilepath", Toast.LENGTH_SHORT).show()
-
-        }catch (e:Exception){
-            Toast.makeText(this, ""+e.toString(), Toast.LENGTH_SHORT).show()
-        }
-    }
-
-
 
     //variables grabar audio
     private var fileName: String = ""
     private var recorder: MediaRecorder? = null
     private var player: MediaPlayer? = null
 
+
     // Requesting permission to RECORD_AUDIO
     private var permissionToRecordAccepted = false
     private var permissions: Array<String> = arrayOf(Manifest.permission.RECORD_AUDIO)
+
 
     //permiso para dispositivo
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray
@@ -150,14 +118,14 @@ class InicioActivity : AppCompatActivity() {
                     Log.e(LOG_TAG, "prepare() failed")
                 }
                 start()
-           }
+            }
 
 
         }
 
         //logica boton detener grabar
         btn_stop.setOnClickListener {
-           restaurar_play(btn_reproducir)
+            restaurar_play(btn_reproducir)
             restaurar_Grabar(btn_grabar)
             restaurar_stop1(btn_detener_repro)
             mostrarmensaje1()
@@ -220,8 +188,8 @@ class InicioActivity : AppCompatActivity() {
 
     }
 
-    //Logica para cambiar de icono al presionar el boton
 
+    //Logica para cambiar de icono al presionar el boton
     private fun cambio_icon(imageView: LottieAnimationView, animation: Int,cambio: Boolean) : Boolean {
         if (!cambio) {
             imageView.setAnimation(animation)
@@ -232,7 +200,6 @@ class InicioActivity : AppCompatActivity() {
         }
         return !cambio
     }
-
     private fun cambio_icon1(imageView: LottieAnimationView, animation: Int,cambio1: Boolean) : Boolean {
         if (!cambio1) {
             imageView.setAnimation(animation)
@@ -243,14 +210,13 @@ class InicioActivity : AppCompatActivity() {
         }
         return !cambio1
     }
-
     private fun cambio_icon2(imageView: LottieAnimationView, animation: Int,cambio2: Boolean) : Boolean {
         if (!cambio2) {
             imageView.setAnimation(animation)
             imageView.playAnimation()
         }
         else {
-           restaurar_play(btn_reproducir)
+            restaurar_play(btn_reproducir)
         }
         return !cambio2
     }
@@ -290,9 +256,48 @@ class InicioActivity : AppCompatActivity() {
     }
     private fun restaurar_play(imageView: LottieAnimationView) {
         imageView.setImageResource(R.drawable.icon_play)
-        }
+    }
     private fun restaurar_stop1(imageView: LottieAnimationView) {
         imageView.setImageResource(R.drawable.icon_stop1)
     }
+
+
+    //Inicio Proceso de PDF
+    //variables guardar pdf
+    private lateinit var et_pdf_data : EditText
+    private lateinit var btn_generar_Pdf : EditText
+    private val STORAGE_CODE = 1001
+
+
+    private fun savePDF() {
+        val mDoc = Document()
+        val mFileName = SimpleDateFormat("yyyHHdd_HHmmss", Locale.getDefault())
+            .format(System.currentTimeMillis())
+
+        val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
+
+        try {
+
+            PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
+            mDoc.open()
+
+            val n_auto = n_auto.text.toString().trim()
+            val text = Paragraph(n_auto)
+            mDoc.add(text)
+
+
+            mDoc.addAuthor("TecnoDesign")
+            mDoc.add(Paragraph(n_auto))
+
+            mDoc.close()
+            Toast.makeText(this, "$mFileName.pdf\n es creado  en \n $mFilepath", Toast.LENGTH_SHORT).show()
+
+        }catch (e:Exception){
+            Toast.makeText(this, ""+e.toString(), Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
+
 
 }
