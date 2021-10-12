@@ -176,13 +176,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="4dp"
-                app:cardMaxElevation="0dp">
+                app:cardMaxElevation="0dp"
+                android:background="@color/principal">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/secundario"
+                    android:background="@drawable/fondo_scroll_inicio"
                     android:orientation="vertical">
 
                     <TextView
@@ -677,7 +678,7 @@
                     //Inicio de Informacion bloque 4 "Motivo de la Consulta"
 
                     <TextView
-                        android:layout_width="@dimen/anchogen"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
@@ -779,6 +780,146 @@
                         android:textSize="20sp"
                         android:text="@string/antecedentes"
                         android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/b4_date6"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/patologico"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date7"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/quirurgico"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date8"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/alergico"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date9"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/farmacologico"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date10"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/toxico"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date11"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/host"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date12"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/ocupacional"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date13"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/familiares"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date14"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/gineco"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date15"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/trauma"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/b4_date16"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/otros"/>
+
+
+
+
+
+                    </LinearLayout>
 
                     //Boton Para convertir la Informacion a PDF
 
