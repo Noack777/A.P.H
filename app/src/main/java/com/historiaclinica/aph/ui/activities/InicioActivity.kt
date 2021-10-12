@@ -295,8 +295,6 @@ class InicioActivity : AppCompatActivity() {
 
 
             mDoc.addAuthor("TecnoDesign")
-            mDoc.add(Paragraph(n_auto))
-
             mDoc.close()
             Toast.makeText(this, "$mFileName.pdf\n es creado  en \n $mFilepath", Toast.LENGTH_SHORT).show()
 
