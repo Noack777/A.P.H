@@ -31,6 +31,7 @@ class SplashscreeActivity : AppCompatActivity() {
             override fun onAnimationEnd(p0: Animation?) {
 
                 startActivity(intent)
+                overridePendingTransition(R.anim.from_left, R.anim.from_rigth)
                 finish()
 
             }

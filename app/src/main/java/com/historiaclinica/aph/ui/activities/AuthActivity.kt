@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.airbnb.lottie.LottieAnimationView
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.historiaclinica.aph.R
@@ -29,6 +30,7 @@ class AuthActivity : AppCompatActivity() {
         botonadmin.setOnClickListener {
             val intent: Intent = Intent(this, Login_Admin_Activity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
 
     }
@@ -48,6 +50,7 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful) {
 
                             showinicio(it.result?.user?.email ?: "", ProviderType.BASIC)
+                            overridePendingTransition(R.anim.from_left, R.anim.from_rigth)
 
                         } else {
 
@@ -60,6 +63,7 @@ class AuthActivity : AppCompatActivity() {
         }
 
     }
+
 
     private fun showAlert (){
 

@@ -916,9 +916,6 @@
                             android:hint="@string/otros"/>
 
 
-
-
-
                     </LinearLayout>
 
                     //Boton Para convertir la Informacion a PDF

@@ -20,7 +20,7 @@
     <string name="tituloadmin">Bienvenido !Registrate por aca!</string>
     <string name="subtitleadmin1">Ingresa Un nombre de Usuario y una contraseña!</string>
     <string name="subtitleadmin2">de trabajo</string>
-    <string name="username">Nombre de Usuario</string>
+    <string name="username">Correo Electronico</string>
     <string name="correo">Correo Universitario</string>
     <string name="codigoregistro">Codigo</string>
     <string name="repiteelcodigo">Repite el Codigo</string>

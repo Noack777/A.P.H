@@ -17,6 +17,7 @@ class Login_Admin_Activity : AppCompatActivity() {
 
             val intent:Intent = Intent (this, AuthActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             finish()
 
         }
@@ -67,6 +68,7 @@ class Login_Admin_Activity : AppCompatActivity() {
             putExtra("provaider",provider.name)
         }
         startActivity(InicioActivityIntent)
+        overridePendingTransition(R.anim.from_left, R.anim.from_rigth)
     }
 
 }
