@@ -167,7 +167,7 @@ class InicioActivity : AppCompatActivity() {
             cambio3 = cambio_icon(btn_detener_repro, R.raw.animation_stop, cambio3)
         }
 
-//PARTE LOGICA CREACION PDF
+        //PARTE LOGICA CREACION PDF
         et_pdf_data = findViewById(R.id.b1_date1)
 
 
@@ -284,6 +284,14 @@ class InicioActivity : AppCompatActivity() {
             val n_auto = n_auto.text.toString().trim()
             val text = Paragraph(n_auto)
             mDoc.add(text)
+
+            val b1_date1 = b1_date1.text.toString().trim()
+            val text1 = Paragraph(b1_date1)
+            mDoc.add(text1)
+
+            val b1_date2 = b1_date2.text.toString().trim()
+            val text2 = Paragraph(b1_date2)
+            mDoc.add(text2)
 
 
             mDoc.addAuthor("TecnoDesign")
