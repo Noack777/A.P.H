@@ -273,8 +273,6 @@ class InicioActivity : AppCompatActivity() {
 
         try {
 
-
-
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
@@ -291,6 +289,7 @@ class InicioActivity : AppCompatActivity() {
             val tit = "                            UNIVERSIDAD MILITAR NUEVA GRANADA"
 
             mDoc.add(Paragraph(tit,fuente))
+
 
             mDoc.addAuthor("TecnoDesign")
             mDoc.close()
