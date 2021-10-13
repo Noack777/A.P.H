@@ -271,10 +271,6 @@ class InicioActivity : AppCompatActivity() {
         val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
 
 
-
-
-
-
         try {
 
 
