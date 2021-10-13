@@ -269,30 +269,47 @@ class InicioActivity : AppCompatActivity() {
         val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
 
 
-
-
-
-
         try {
 
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
 
-
+            //No.
 
             val n_auto = n_auto.text.toString().trim()
             val text = Paragraph(n_auto)
             mDoc.add(text)
 
-
-            val b1_date1 = b1_date1.text.toString().trim()
-            val text1 = Paragraph(b1_date1)
+            //Fecha
+            val b1_date1 = "Fecha:" + b1_date1.text.toString().trim()
+            val text1 = Paragraph("Fecha:" + b1_date1)
             mDoc.add(text1)
 
-            val b1_date2 = b1_date2.text.toString().trim()
-            val text2 = Paragraph(b1_date2)
+            //ambulancia
+            val b1_date2 = "Ambulancia:" + b1_date2.text.toString().trim()
+            val text2 = Paragraph("Ambulancia:" + b1_date2)
             mDoc.add(text2)
+
+            //tripulacion
+            val b1_date3 = "Tripulación:" + b1_date3.text.toString().trim()
+            val text3 = Paragraph("Tripulación:" + b1_date3)
+            mDoc.add(text3)
+
+            //conductor
+            val b1_date4 = "Consuctor:" + b1_date4.text.toString().trim()
+            val text4 = Paragraph("Conductor:" + b1_date4)
+            mDoc.add(text4)
+
+            //aph
+            val b1_date5 = "Aph:" + b1_date5.text.toString().trim()
+            val text5 = Paragraph("Aph:" + b1_date5)
+            mDoc.add(text5)
+
+            //estudiante
+            val b1_date6 = "Estudiante:" + b1_date6.text.toString().trim()
+            val text6 = Paragraph("Estudiante:" + b1_date6)
+            mDoc.add(text6)
 
 
             mDoc.addAuthor("TecnoDesign")
