@@ -14,7 +14,6 @@ import android.media.MediaRecorder
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.text.Layout
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
@@ -22,8 +21,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.airbnb.lottie.LottieAnimationView
 import com.historiaclinica.aph.R
-import com.itextpdf.text.*
-import com.itextpdf.text.pdf.PdfName.CENTER
+import com.itextpdf.text.BaseColor
+import com.itextpdf.text.Document
+import com.itextpdf.text.Font
+import com.itextpdf.text.Paragraph
 import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.FileOutputStream
@@ -281,7 +282,7 @@ class InicioActivity : AppCompatActivity() {
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
-<<<<<<< HEAD
+
             val letraUs = Font()
             letraUs.setColor(BaseColor.GREEN)
             letraUs.setSize(10F)
@@ -294,24 +295,6 @@ class InicioActivity : AppCompatActivity() {
             val tit = "                            UNIVERSIDAD MILITAR NUEVA GRANADA"
 
             mDoc.add(Paragraph(tit,fuente))
-=======
-
-
->>>>>>> design
-
-            val n_auto = n_auto.text.toString().trim()
-
-            mDoc.add(Paragraph(n_auto,letraUs))
-
-
-            val b1_date1 = b1_date1.text.toString().trim()
-            val text1 = Paragraph(b1_date1)
-            mDoc.add(text1)
-
-            val b1_date2 = b1_date2.text.toString().trim()
-            val text2 = Paragraph(b1_date2)
-            mDoc.add(text2)
-
 
             mDoc.addAuthor("TecnoDesign")
             mDoc.close()
