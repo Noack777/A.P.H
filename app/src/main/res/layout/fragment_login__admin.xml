@@ -109,12 +109,12 @@
                         android:background="@color/colorboton">
 
                         <Button
-                            android:id="@+id/btnback"
-                            android:layout_width="149dp"
+                            android:id="@+id/botonloginadmin"
+                            android:layout_width="@dimen/anchobotonlogin"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#CAF0F8"
-                            android:text="ATRAS"
-                            android:textColor="@color/black" />
+                            android:text="@string/botoningresar"
+                            android:textColor="@color/black"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -128,15 +128,15 @@
                         app:cardCornerRadius="10dp"
                         android:elevation="0dp"
                         android:layout_gravity="center"
-                        android:background="@color/colorboton" >
+                        android:background="@drawable/botones_registros" >
 
                         <Button
-                            android:id="@+id/botonloginadmin"
-                            android:layout_width="@dimen/anchobotonlogin"
+                            android:id="@+id/btnback"
+                            android:layout_width="149dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#CAF0F8"
-                            android:text="@string/botoningresar"
-                            android:textColor="@color/black"/>
+                            android:text="ATRAS"
+                            android:textColor="@color/black" />
 
                     </androidx.cardview.widget.CardView>
 
