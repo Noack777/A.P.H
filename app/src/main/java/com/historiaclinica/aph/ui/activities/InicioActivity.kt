@@ -12,22 +12,15 @@ import android.content.pm.PackageManager
 import android.media.MediaPlayer
 import android.media.MediaRecorder
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
-import android.os.PersistableBundle
 import android.text.Layout
 import android.util.Log
-import android.view.MenuItem
-import android.view.View
-import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.airbnb.lottie.LottieAnimationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.historiaclinica.aph.R
 import com.itextpdf.text.*
 import com.itextpdf.text.pdf.PdfName.CENTER
@@ -35,7 +28,6 @@ import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.FileOutputStream
 import java.io.IOException
-import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -277,6 +269,11 @@ class InicioActivity : AppCompatActivity() {
 
         val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
 
+
+
+
+
+
         try {
 
 
@@ -284,6 +281,7 @@ class InicioActivity : AppCompatActivity() {
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
+<<<<<<< HEAD
             val letraUs = Font()
             letraUs.setColor(BaseColor.GREEN)
             letraUs.setSize(10F)
@@ -296,10 +294,15 @@ class InicioActivity : AppCompatActivity() {
             val tit = "                            UNIVERSIDAD MILITAR NUEVA GRANADA"
 
             mDoc.add(Paragraph(tit,fuente))
+=======
+
+
+>>>>>>> design
 
             val n_auto = n_auto.text.toString().trim()
 
             mDoc.add(Paragraph(n_auto,letraUs))
+
 
             val b1_date1 = b1_date1.text.toString().trim()
             val text1 = Paragraph(b1_date1)
