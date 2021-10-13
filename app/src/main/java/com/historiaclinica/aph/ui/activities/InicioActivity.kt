@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.os.PersistableBundle
+import android.text.Layout
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
@@ -28,8 +29,8 @@ import androidx.core.content.ContextCompat
 import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.historiaclinica.aph.R
-import com.itextpdf.text.Document
-import com.itextpdf.text.Paragraph
+import com.itextpdf.text.*
+import com.itextpdf.text.pdf.PdfName.CENTER
 import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.FileOutputStream
@@ -278,12 +279,27 @@ class InicioActivity : AppCompatActivity() {
 
         try {
 
+
+
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
+            val letraUs = Font()
+            letraUs.setColor(BaseColor.GREEN)
+            letraUs.setSize(10F)
+
+            val fuente = Font()
+            fuente.setStyle(Font.BOLD)
+            fuente.setColor(BaseColor.BLUE)
+            fuente.setSize(52F)
+
+            val tit = "                            UNIVERSIDAD MILITAR NUEVA GRANADA"
+
+            mDoc.add(Paragraph(tit,fuente))
+
             val n_auto = n_auto.text.toString().trim()
-            val text = Paragraph(n_auto)
-            mDoc.add(text)
+
+            mDoc.add(Paragraph(n_auto,letraUs))
 
             val b1_date1 = b1_date1.text.toString().trim()
             val text1 = Paragraph(b1_date1)
@@ -300,6 +316,9 @@ class InicioActivity : AppCompatActivity() {
 
         }catch (e:Exception){
             Toast.makeText(this, ""+e.toString(), Toast.LENGTH_SHORT).show()
+        } catch(i:IOException )
+        {
+            Toast.makeText(this, ""+i.toString(), Toast.LENGTH_SHORT).show()
         }
     }
 
