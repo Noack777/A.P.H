@@ -277,21 +277,76 @@ class InicioActivity : AppCompatActivity() {
             mDoc.open()
 
 
-            val letraUs = Font()
-            letraUs.setColor(BaseColor.GREEN)
-            letraUs.setSize(10F)
+            val separador = mDoc.add(Paragraph("    "))
+
+            val negrilla = Font()
+            negrilla.setStyle(Font.BOLD)
+            negrilla.setSize(12F)
+
+            val espacio = "                            "
+
+            val letra = Font()
+            letra.setColor(BaseColor.BLACK)
+            letra.setSize(12F)
+
+
+            val Estantit = Font()
+            Estantit.setColor(BaseColor.BLACK)
+            Estantit.setSize(15F)
 
             val fuente = Font()
             fuente.setStyle(Font.BOLD)
-            fuente.setColor(BaseColor.BLUE)
-            fuente.setSize(52F)
+            fuente.setColor(BaseColor.GRAY)
+            fuente.setSize(20F)
 
-            val tit = "                            UNIVERSIDAD MILITAR NUEVA GRANADA"
+            val fuente_black = Font()
+            fuente_black.setStyle(Font.BOLD)
+            fuente_black.setColor(BaseColor.BLACK)
+            fuente_black.setSize(20F)
 
+
+            //Titulo
+            val tit = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
             mDoc.add(Paragraph(tit,fuente))
 
+            //Titulo 2
+            val tit2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit2, Estantit))
 
-            mDoc.addAuthor("TecnoDesign")
+            //Titulo3
+            val tit3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit3, letra))
+
+            //Titulo4
+            val tit4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit4, letra))
+
+            //Consecutivo
+            val consecutivo = "                                                              HISTORIA CLINICA No."
+            val n_auto = n_auto.text.toString().trim()
+            mDoc.add (Paragraph(consecutivo + n_auto, negrilla, ))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Bloque 1
+
+            val Info_trip = "             Informacion de la tripulación y el Turno"
+            val fecha = "Fecha"
+            val b1_date1 = b1_date1.text.toString().trim()
+            val b1_date2 = b1_date2.text.toString().trim()
+            val ambulancia = "Ambulancia"
+            mDoc.add(Paragraph(Info_trip, fuente_black))
+            separador
+            separador
+            mDoc.add(Paragraph(fecha + espacio + ambulancia, fuente_black))
+            separador
+            mDoc.add(Paragraph(b1_date1 + espacio + b1_date2, letra))
+
+
+            mDoc.addAuthor("Tecno-Design")
             mDoc.close()
             Toast.makeText(this, "$mFileName.pdf\n es creado  en \n $mFilepath", Toast.LENGTH_SHORT).show()
 
