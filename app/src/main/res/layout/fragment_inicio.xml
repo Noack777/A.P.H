@@ -39,7 +39,6 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
@@ -52,7 +51,6 @@
                     tools:layout_editor_absoluteY="0dp"
                     android:layout_marginLeft="60dp"
                     tools:ignore="MissingConstraints" />
-
 
                 <TextView
                     android:id="@+id/textView3"
@@ -67,7 +65,6 @@
                     app:layout_constraintStart_toEndOf="@+id/textView2"
                     tools:layout_editor_absoluteY="0dp"
                     tools:ignore="MissingConstraints" />
-
 
                 <TextView
                     android:id="@+id/textView"
@@ -95,16 +92,13 @@
                     tools:layout_editor_absoluteY="0dp"
                     tools:ignore="MissingConstraints" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
 
             // Botones de Grabacion
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +106,6 @@
                 android:layout_gravity="center">
 
                 //Boton para Grabar
-
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_grabar"
                     android:layout_width="60dp"
@@ -123,11 +116,9 @@
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
-
                 //Boton para detener Grabacion
 
                 //Boton para reproducir Grabacion
-
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_stop"
                     android:layout_width="60dp"
@@ -137,7 +128,6 @@
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar"
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
-
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_reproducir"
@@ -165,7 +155,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"/>
 
-
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -178,7 +167,6 @@
                 app:cardCornerRadius="4dp"
                 app:cardMaxElevation="0dp"
                 android:background="@color/principal">
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -195,7 +183,7 @@
                         android:textSize="@dimen/tamaniotituloinicio"
                         android:textStyle="bold" />
 
-                    <View
+                    <Space
                         android:layout_width="match_parent"
                         android:layout_height="10dp" />
 
@@ -206,7 +194,7 @@
                         android:text="@string/subtituloInicio"
                         android:textStyle="bold" />
 
-                    <View
+                    <Space
                         android:layout_width="match_parent"
                         android:layout_height="40dp" />
 
@@ -224,12 +212,13 @@
 
                         <EditText
                             android:id="@+id/n_auto"
-                            android:layout_width="125dp"
+                            android:layout_width="60dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
                             android:hint="@string/numero"
-                            android:textSize="12sp"/>
-
+                            android:textSize="12sp"
+                            android:gravity="center"/>
 
                     </RelativeLayout>
 
@@ -249,8 +238,6 @@
                         android:layout_height="20dp" />
 
                     //Inicio de bloque uno de informacion
-
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -365,7 +352,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"/>
 
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -395,7 +381,6 @@
                     //Fin de Informacion del Bloque 1
 
                     //Inicio de Informacion Bloque 2
-
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="10dp" />
@@ -466,9 +451,6 @@
                     //Final de Informacion Bloque 2
 
                     //Inicio de Informacion Bloque 3
-
-
-
                     <TextView
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
@@ -510,6 +492,7 @@
                             tools:ignore="TouchTargetSizeCheck" />
 
                     </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -608,6 +591,7 @@
                         android:hint="@string/edad"/>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -678,7 +662,6 @@
 
                     //Final de Informacion bloque 3
                     //Inicio de Informacion bloque 4 "Motivo de la Consulta"
-
                     <TextView
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
@@ -703,7 +686,6 @@
                         android:background="@drawable/stylo_bordes"/>
 
                     //"Enfermedad Actual
-
                     <TextView
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
@@ -968,8 +950,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1048,7 +1028,6 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date6"/>
 
-
                     </LinearLayout>
 
                     <Space
@@ -1060,7 +1039,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1120,14 +1098,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
 
-
                     //Signos Vitales 2
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center">
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1228,7 +1204,6 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date6"/>
 
-
                     </LinearLayout>
 
                     <Space
@@ -1299,7 +1274,6 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
-
 
                     //Signos Vitales 3
                     <LinearLayout
@@ -1408,7 +1382,6 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date6"/>
 
-
                     </LinearLayout>
 
                     <Space
@@ -1480,7 +1453,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
 
-
                     //Paciente Quemado
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1511,9 +1483,7 @@
                             android:layout_width="20dp"
                             android:layout_height="wrap_content"/>
 
-
                     </LinearLayout>
-
 
                     //Superficie Corporal
                     <LinearLayout
@@ -1558,13 +1528,11 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b8_date5"/>
 
-
                     </LinearLayout>
 
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
-
 
                     //Caida del Brazo
                     <LinearLayout
@@ -1616,7 +1584,6 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
-
 
                     //Estado General
                     <LinearLayout
@@ -1860,7 +1827,6 @@
 
                     </LinearLayout>
 
-
                     //Boton Para convertir la Informacion a PDF
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -1869,23 +1835,19 @@
                         android:orientation="horizontal">
 
                         <Button
-
                             android:id="@+id/finalizar"
                             android:layout_width="@dimen/anchogen"
                             android:layout_height="wrap_content"
                             android:layout_margin="20dp"
                             android:text="@string/finalizar"
                             android:textColor="@color/white"
-                            android:background="@drawable/boton_login"/>                           />
-
+                            android:background="@drawable/boton_login"/>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-
             </androidx.cardview.widget.CardView>
-
 
             </ScrollView>
 
