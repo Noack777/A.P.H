@@ -842,7 +842,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/toxico"/>
+                            android:hint="@string/toxico"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -916,11 +917,566 @@
                             android:layout_marginTop="10dp"
                             android:hint="@string/otros"/>
 
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        //Examenes Fisicos
+                        <TextView
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:text="@string/e_fisicos"
+                            android:textColor="@color/black"/>
 
                     </LinearLayout>
 
-                    //Boton Para convertir la Informacion a PDF
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        //Signos Vitales
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/s_vitales"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ta"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date1"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/slash"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tam"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date3"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fc"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date4"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date5"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date6"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date6"/>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sat"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date7"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date7"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fio"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date8"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date8"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gluco"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date9"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date9"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hora"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b5_date10"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date10"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Signos Vitales 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/s_vitales2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ta_2"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date1"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/slash_2"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tam_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date3"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fc_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date4"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date5"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date6"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date6"/>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sat_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date7"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date7"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fio_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date8"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date8"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gluco_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date9"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date9"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hora_2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b6_date10"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b6_date10"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Signos Vitales 3
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/s_vitales3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ta_3"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date1"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/slash_3"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tam_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date3"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fc_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date4"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date5"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xfr_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date6"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date6"/>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sat_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date7"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date7"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fio_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date8"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date8"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gluco_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date9"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date9"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hora_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/b7_date10"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b7_date10"/>
+
+                    </LinearLayout>
+
+
+
+                    //Boton Para convertir la Informacion a PDF
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
