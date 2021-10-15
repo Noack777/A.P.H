@@ -11,7 +11,7 @@
     <string name="bienvenidoInicio">Bienvenido</string>
     <string name="subtituloInicio">¡Que no se escape nada de información!</string>
     <string name="subtituloInicio2">Historia Clinica No</string>
-    <string name="numero">No. Automatico</string>
+    <string name="numero">No.</string>
     <string name="titulologin">Bienvenido a:</string>
     <string name="subtitlelogin">Tu Historia Clinica Prehospitalaria</string>
     <string name="Usuario">Usuario</string>
@@ -28,35 +28,35 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_maps_key">maps</string>
     <string name="todo">TODO</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Contraseña">Ingresa tu contraseña</string>
     <string name="confiContra">Confirma tu contraseña</string>
     <string name="subtitle_inicio"> Ingresa los Datos Solicitados </string>
     <string name="finalizar">GENERAR ARCHIVO</string>
 
     //Inicio de informacion bloque 1 datos del 1 al 8
-
     <string name="bloque1"> Informacion de la tripulación y el Turno </string>
-        <string name="fecha">DD/MM/AA</string> //date 1
-        <string name="ambulancia">Ambulancia</string> //date 2
-        <string name="tripulacion">Tripulacion</string> //date 3
-        <string name="conductor">Conductor</string> //date 4
-        <string name="aph">APH</string> //date 5
-        <string name="estudiante">Estudiante</string> //date 6
-        <string name="otro">Otro</string> //date 7
-        <string name="evaluacion">Evaluacion de la Escena</string>
-        <string name="descripcion">Describe Brevemente la Evaluación de la Escena</string> //date 8
+    <string name="fecha">DD/MM/AA</string> //date 1
+    <string name="ambulancia">Ambulancia</string> //date 2
+    <string name="tripulacion">Tripulacion</string> //date 3
+    <string name="conductor">Conductor</string> //date 4
+    <string name="aph">APH</string> //date 5
+    <string name="estudiante">Estudiante</string> //date 6
+    <string name="otro">Otro</string> //date 7
+    <string name="evaluacion">Evaluacion de la Escena</string>
+    <string name="descripcion">Describe Brevemente la Evaluación de la Escena</string> //date 8
+
+    //Final bloque 1
 
     //Inicio de informacion del bloque 2 datos 1 al 4
-
     <string name="t_atencion">Tiempo de Atención</string>
     <string name="despacho">Despacho</string> //date 1
     <string name="en_la_escena">En La Escena</string> //date 2
     <string name="c_atencion">Centro de Atencion (Destino)</string> //date 3
     <string name="f_atencion">Finalización de la Atención</string> //date 4
 
-    //Inicio de Informacion del bloque 3 Datos del 1 al 15
+    //Final Bloque 2
 
+    //Inicio de Informacion del bloque 3 Datos del 1 al 15
     <string name="d_personal">Datos Personales</string>
     <string name="p_apellido">Primer Apellido</string> //date 1
     <string name="s_apellido">Segundo Apellido</string> //date 2
@@ -74,8 +74,9 @@
     <string name="f_a">Familiar/Acompañante</string> //date 14
     <string name="contacto">Telefono de Contacto</string> //date 15
 
+    //Final Bloque 3
+
     //Inicio de Informacion del bloque 4 Datos del 1 al 16
-    
     <string name="m_consulta">Motivo de la Consulta</string>
     <string name="descripcion_2">Describe Brevemente el Motivo de la Consulta</string> //date 1
     <string name="enfermedad">Enfermedad Actual</string>
@@ -99,8 +100,7 @@
 
     //Final del bloque 4 Datos del 1 al 16
 
-    //Inicio del Bloque 5
-
+    //Inicio del Bloque 5 datos del 1 al 10
     <string name="e_fisicos">Examenes Fisicos</string>
     <string name="s_vitales">Signos Vitales 1</string>
     <string name="ta">TA:</string>
@@ -126,8 +126,7 @@
 
     //Final Bloque 5
 
-    //Inicio Bloque 5
-
+    //Inicio Bloque 6 datos del 1 al 10
     <string name="s_vitales2">Signos Vitales 2</string>
     <string name="ta_2">TA:</string>
     <string name="b6_date1"></string> date 1
@@ -152,8 +151,7 @@
 
     //Final Bloque 6
 
-    //Inicio Bloque 7
-
+    //Inicio Bloque 7 datos del 1 al 10
     <string name="s_vitales3">Signos Vitales 3</string>
     <string name="ta_3">TA:</string>
     <string name="b7_date1"></string> date 1
@@ -178,12 +176,56 @@
 
     //Final Bloque 7
 
-    //Inicio Bloque 8
+    //Inicio Bloque 8 del 1 al 9
     <string name="paciente">Paciente Quemado (Si)</string>
     <string name="b8_date1"></string> //date 1
     <string name="no">(No)</string>
     <string name="b8_date2"></string> //date 2
     <string name="b8_date3">%Superficie Corporal Quemada (SCQ):</string> //date 3
-    
+    <string name="escalas">Escalas:Glasgow:/15 Cincinnati:Paresia Facial</string>
+    <string name="b8_date4">Si</string> // date 4
+    <string name="b8_date5">No</string> // date 5
+    <string name="brazo">Caida del Brazo</string>
+    <string name="b8_date6">Si</string> // date 6
+    <string name="b8_date7">No</string> // date 7
+    <string name="t_lenguaje">Trastorno del Lenguaje</string>
+    <string name="b8_date8">Si</string> // date 8
+    <string name="b8_date9">No</string> // date 9
+
+    //FInal bloque 8
+
+    //Inicio Bloque 9 del 1 al 10
+    <string name="b9_date1">Estado General</string> //date 1
+    <string name="b9_date2">Cabeza y Cuello</string> //date 2
+    <string name="b9_date3">Tórax</string> //date 3
+    <string name="b9_date4">Abdomen</string> //date 4
+    <string name="b9_date5">Pelvis</string> //date 5
+    <string name="b9_date6">Genitourinario</string> //date 6
+    <string name="b9_date7">Extremidades</string> //date 7
+    <string name="b9_date8">Osteomuscular</string> //date 8
+    <string name="b9_date9">Piel y Faneras</string> //date 9
+    <string name="b9_date10">Neurológico</string> //date 10
+
+    //Final Bloque 9
+
+    //Inicio Bloque 10 datos del 1 al 5
+    <string name="a_caso">Analisis del Caso</string>
+    <string name="b10_date1">Describe brevemente tu analisis</string> // date 1
+    <string name="i_diagnostica">Impresión Diagnóstica (Sospecha o probable Diagnóstico):</string>
+    <string name="b10_date2">Describe Brevemente la Impresion Diagnóstica</string> // date 2
+    <string name="plan">Plan y Manejo</string>
+    <string name="b10_date3">(Propuesto por la Tripulación o Personal o Intrahospitalario</string> //date 3
+    <string name="b10_date4">Propuesto por Usted como Tecnólogo en APH</string> //date 4
+    <string name="d_paciente">Descripción de la entrega del Paciente</string>
+    <string name="b10_date5">Describe Brevemente la entrega del Paciente</string> //date 5
+
+    //Final Bloque 10
+
+    //Inicio Bloque 11 (Creditos)
+    <string name="elaborado">Elaborado Por:</string>
+    <string name="vobo">VO BO</string>
+
+
+
 
 </resources>

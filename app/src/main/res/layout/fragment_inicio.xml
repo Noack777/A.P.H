@@ -596,7 +596,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/f_nacimiento"/>
+                        android:hint="@string/f_nacimiento"
+                        android:minHeight="48dp" />
 
                     <EditText
                         android:id="@+id/b3_date10"
@@ -759,7 +760,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/c_2"/>
+                        android:hint="@string/c_2"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <EditText
                         android:id="@+id/b4_date5"
@@ -1474,6 +1476,389 @@
 
                     </LinearLayout>
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Paciente Quemado
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="@string/paciente"/>
+
+                        <EditText
+                            android:id="@+id/b8_date1"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="@string/no"/>
+
+                        <EditText
+                            android:id="@+id/b8_date2"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                    //Superficie Corporal
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/b8_date3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date3"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    //Escala
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="@string/escalas"/>
+
+                        <EditText
+                            android:id="@+id/b8_date4"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date4"/>
+
+                        <EditText
+                            android:id="@+id/b8_date5"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date5"/>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Caida del Brazo
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="@string/brazo"/>
+
+                        <EditText
+                            android:id="@+id/b8_date6"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date6"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                        <EditText
+                            android:id="@+id/b8_date7"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date7"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="@string/t_lenguaje"/>
+
+                        <EditText
+                            android:id="@+id/b8_date8"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date8"/>
+
+                        <EditText
+                            android:id="@+id/b8_date9"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b8_date9"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Estado General
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/b9_date1"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date1"/>
+
+                        <EditText
+                            android:id="@+id/b9_date2"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date2"/>
+
+                        <EditText
+                            android:id="@+id/b9_date3"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date3"/>
+
+                        <EditText
+                            android:id="@+id/b9_date4"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date4"/>
+
+                        <EditText
+                            android:id="@+id/b9_date5"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date5"/>
+
+                        <EditText
+                            android:id="@+id/b9_date6"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date6"/>
+
+                        <EditText
+                            android:id="@+id/b9_date7"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/b9_date7"
+                            android:minHeight="48dp" />
+
+                        <EditText
+                            android:id="@+id/b9_date8"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date8"/>
+
+                        <EditText
+                            android:id="@+id/b9_date9"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date9"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    //Analisis del caso
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/a_caso"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/b10_date1"
+                            android:background="@drawable/stylo_bordes"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="@dimen/largocuadrado"
+                            android:layout_margin="20sp"
+                            android:hint="@string/b10_date1" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                //Impresion Diagnostica
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/i_diagnostica"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/b10_date2"
+                            android:background="@drawable/stylo_bordes"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="@dimen/largocuadrado"
+                            android:layout_margin="20sp"
+                            android:hint="@string/b10_date2" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Plan y Manejo
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/plan"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/b10_date3"
+                            android:background="@drawable/stylo_bordes"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="@dimen/largocuadrado"
+                            android:layout_margin="20sp"
+                            android:hint="@string/b10_date3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/b10_date4"
+                            android:background="@drawable/stylo_bordes"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="@dimen/largocuadrado"
+                            android:layout_margin="20sp"
+                            android:hint="@string/b10_date4" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+
+                    //Descripción de la entrega del paciente
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/d_paciente"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/b10_date5"
+                            android:background="@drawable/stylo_bordes"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="@dimen/largocuadrado"
+                            android:layout_margin="20sp"
+                            android:hint="@string/b10_date5"/>
+
+                    </LinearLayout>
 
 
                     //Boton Para convertir la Informacion a PDF
@@ -1491,7 +1876,7 @@
                             android:layout_margin="20dp"
                             android:text="@string/finalizar"
                             android:textColor="@color/white"
-                            android:background="@drawable/boton_login"/>                            />
+                            android:background="@drawable/boton_login"/>                           />
 
 
                     </LinearLayout>
