@@ -276,29 +276,37 @@ class InicioActivity : AppCompatActivity() {
             PdfWriter.getInstance(mDoc, FileOutputStream(mFilepath))
             mDoc.open()
 
-
+            //Separador
             val separador = mDoc.add(Paragraph("    "))
 
+            //Negrilla con Letra tamaño 12
             val negrilla = Font()
             negrilla.setStyle(Font.BOLD)
             negrilla.setSize(12F)
 
+            //Espacio Horizontal
             val espacio = "                            "
 
+            //Espacio Horizontal 2
+            val espacio2 = "                    "
+
+            //Letra Normal Tamaño 12
             val letra = Font()
             letra.setColor(BaseColor.BLACK)
             letra.setSize(12F)
 
-
+            //Titulos con letra tamaño 15
             val Estantit = Font()
             Estantit.setColor(BaseColor.BLACK)
             Estantit.setSize(15F)
 
+            //Titulo con Color Gris y Negrilla
             val fuente = Font()
             fuente.setStyle(Font.BOLD)
             fuente.setColor(BaseColor.GRAY)
             fuente.setSize(20F)
 
+            //Titulo color negro y con negrilla tamaño 20
             val fuente_black = Font()
             fuente_black.setStyle(Font.BOLD)
             fuente_black.setColor(BaseColor.BLACK)
@@ -329,7 +337,6 @@ class InicioActivity : AppCompatActivity() {
             //Espacio
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph("   "))
-            mDoc.add(Paragraph("   "))
 
             //Bloque 1
 
@@ -339,11 +346,128 @@ class InicioActivity : AppCompatActivity() {
             val b1_date2 = b1_date2.text.toString().trim()
             val ambulancia = "Ambulancia"
             mDoc.add(Paragraph(Info_trip, fuente_black))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio + espacio2 + fecha + espacio + ambulancia, negrilla))
             separador
+            mDoc.add(Paragraph(espacio + espacio2 + b1_date1 + espacio2 + b1_date2, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Tripulación
+
+            val tripulacion = "                                       Tripulación"
+            val conductor = "Conductor"
+            val aph = "Aph"
+            val estudiante = "Estudiante"
+            val otro = "Otro"
+            val b1_date3 = b1_date3.text.toString().trim()
+            val b1_date4 = b1_date4.text.toString().trim()
+            val b1_date5 = b1_date5.text.toString().trim()
+            val b1_date6 = b1_date6.text.toString().trim()
+
+            mDoc.add(Paragraph(tripulacion, fuente_black))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + conductor + espacio2 + aph + espacio2 + estudiante + espacio2 + otro, negrilla))
             separador
-            mDoc.add(Paragraph(fecha + espacio + ambulancia, fuente_black))
+            mDoc.add(Paragraph(espacio2 + b1_date3 + espacio + b1_date4 + espacio2 + b1_date5 + espacio2 + b1_date6, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Evaluación de la Escena
+
+            val evaluacion = "Evaluación de la Escena"
+            val b1_date7 = b1_date7.text.toString().trim()
+
+            mDoc.add(Paragraph(evaluacion, fuente_black))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b1_date7, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Tiempo de Atencion
+
+            val tiempo = "                             Tiempo de Atención"
+            val despacho = "Despacho"
+            val en_escena = "En la Escena"
+            val centro = "Centro de Atención (Destino)"
+            val final_atencion = "Finalización de Atención"
+            val b2_date1 = b2_date1.text.toString().trim()
+            val b2_date2 = b2_date2.text.toString().trim()
+            val b2_date3 = b2_date3.text.toString().trim()
+            val b2_date4 = b2_date4.text.toString().trim()
+
+            mDoc.add(Paragraph(tiempo, fuente_black))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio + despacho + espacio + espacio + en_escena, negrilla))
             separador
-            mDoc.add(Paragraph(b1_date1 + espacio + b1_date2, letra))
+            mDoc.add(Paragraph(espacio + b2_date1 + espacio + espacio + b2_date2, letra))
+
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + centro + espacio + final_atencion, negrilla))
+            separador
+
+            mDoc.add(Paragraph(espacio2 + b2_date3 + espacio + espacio2 + espacio2 + b2_date4, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Titulo
+            val tit_ = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
+            mDoc.add(Paragraph(tit_,fuente))
+
+            //Titulo 2
+            val tit_2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit_2, Estantit))
+
+            //Titulo3
+            val tit_3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit_3, letra))
+
+            //Titulo4
+            val tit_4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit_4, letra))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Datos Personales
+            val datos = "                                Datos Personales"
+            val p_apellido = "Primer Apellido"
+            val s_apellido = "Segundo Apellido"
+            val p_nombre = "Nombres"
+            val b3_date1 = b3_date1.text.toString().trim()
+            val b3_date2 = b3_date2.text.toString().trim()
+            val b3_date3 = b3_date3.text.toString().trim()
+            val b3_date4 = b3_date4.text.toString().trim()
+
+            mDoc.add(Paragraph(datos, fuente_black))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + p_apellido + espacio2 + s_apellido + espacio2 + p_nombre, negrilla))
+
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + b3_date1 + espacio + espacio2 + b3_date2 + espacio + b3_date3, letra))
+
+
+
 
 
             mDoc.addAuthor("Tecno-Design")
