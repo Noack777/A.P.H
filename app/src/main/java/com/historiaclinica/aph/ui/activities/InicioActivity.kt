@@ -290,6 +290,9 @@ class InicioActivity : AppCompatActivity() {
             //Espacio Horizontal 2
             val espacio2 = "                    "
 
+            //Espacio Horizontal 3
+            val espacio3 = "              "
+
             //Letra Normal Tamaño 12
             val letra = Font()
             letra.setColor(BaseColor.BLACK)
@@ -453,22 +456,198 @@ class InicioActivity : AppCompatActivity() {
             val b3_date1 = b3_date1.text.toString().trim()
             val b3_date2 = b3_date2.text.toString().trim()
             val b3_date3 = b3_date3.text.toString().trim()
+
+            val t_documento = "T. Documento"
+            val n_documento = "Numero de Documento"
+            val eps = "Eps"
             val b3_date4 = b3_date4.text.toString().trim()
+            val b3_date5 = b3_date5.text.toString().trim()
+            val b3_date6 = b3_date6.text.toString().trim()
+
+            val m_pre = "Medicina Prepagada"
+            val genero = "Genero"
+            val f_nacimiento = "Fecha de Nacimiento"
+            val b3_date7 = b3_date7.text.toString().trim()
+            val b3_date8 = b3_date8.text.toString().trim()
+            val b3_date9 = b3_date9.text.toString().trim()
+
+            val edad = "Edad"
+            val ciudad = "Ciudad"
+            val telefono = "Telefono"
+            val b3_date10 = b3_date10.text.toString().trim()
+            val b3_date11 = b3_date11.text.toString().trim()
+            val b3_date12 = b3_date12.text.toString().trim()
+
+            val direccion = "Dirección"
+            val f_a = "Familiar/Acompañante"
+            val contacto = "Telefono de Constacto"
+            val b3_date13 = b3_date13.text.toString().trim()
+            val b3_date14 = b3_date14.text.toString().trim()
+            val b3_date15 = b3_date15.text.toString().trim()
 
             mDoc.add(Paragraph(datos, fuente_black))
 
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph("   "))
 
+            //Primer Apellido, Segundo Apellido, Nombres
             mDoc.add(Paragraph(espacio2 + p_apellido + espacio2 + s_apellido + espacio2 + p_nombre, negrilla))
 
             mDoc.add(Paragraph("   "))
 
             mDoc.add(Paragraph(espacio2 + b3_date1 + espacio + espacio2 + b3_date2 + espacio + b3_date3, letra))
 
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
 
+            //Tipo de Documento, Numero de Documento, Eps
+            mDoc.add(Paragraph(espacio2 + t_documento + espacio2 + n_documento + espacio2 + eps, negrilla))
 
+            mDoc.add(Paragraph("   "))
 
+            mDoc.add(Paragraph(espacio2 + b3_date4 + espacio + espacio3 +  b3_date5 + espacio + b3_date6, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Medicina Prepagada, Genero, Fecha de Nacimiento
+            mDoc.add(Paragraph(espacio2 + m_pre + espacio2 + genero + espacio2 + f_nacimiento, negrilla))
+
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + b3_date7 + espacio2 + espacio3 +  b3_date8 + espacio + b3_date9, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Edad, ciudad, Telefono
+            mDoc.add(Paragraph(espacio2 + edad + espacio + espacio2 + ciudad + espacio2 + espacio3 + telefono, negrilla))
+
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + b3_date10 + espacio + espacio2 +  b3_date11 + espacio2 + espacio3 + b3_date12, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Direccion, Familiar/Acompañante, Contacto
+            mDoc.add(Paragraph(espacio2 + direccion + espacio2 + f_a + espacio2 + contacto, negrilla))
+
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio2 + b3_date13 + espacio2 + espacio3 +  b3_date14 + espacio + espacio3 + b3_date15, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Motivo de la Consulta
+
+            val m_consulta = "Motivo de la Consulta"
+            val b4_date1 = b4_date1.text.toString().trim()
+
+            mDoc.add(Paragraph(m_consulta, fuente_black))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b4_date1, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Titulo
+            val tit__ = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
+            mDoc.add(Paragraph(tit__,fuente))
+
+            //Titulo 2
+            val tit__2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit__2, Estantit))
+
+            //Titulo3
+            val tit__3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit__3, letra))
+
+            //Titulo4
+            val tit__4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit__4, letra))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+
+            //Enfermedad Actual
+
+            val enfermedad = "Enfermedad Actual"
+            val b4_date2 = b4_date2.text.toString().trim()
+
+            mDoc.add(Paragraph(enfermedad, fuente_black))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b4_date2, letra))
+
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Revision por Sistemas
+
+            val r_sistemas = "Revisión Por Sistemas"
+            val b4_date3 = b4_date3.text.toString().trim()
+            val b4_date4 = b4_date4.text.toString().trim()
+            val b4_date5 = b4_date5.text.toString().trim()
+
+            mDoc.add(Paragraph(r_sistemas, fuente_black))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b4_date3, letra))
+            mDoc.add(Paragraph(b4_date4, letra))
+            mDoc.add(Paragraph(b4_date5, letra))
+
+            mDoc.add(Paragraph("   "))
+
+            //Antecedentes
+
+            val antecedentes = "Antecedentes:"
+            val patologico = "Patologico:"
+            val quirurgico = "Quirurgico:"
+            val alergico = "Alergico:"
+            val farmacologico = "Farmacologico:"
+            val toxico = "Toxico:"
+            val host = "Hospitalizaciones:"
+            val ocupacional = "Ocupacional:"
+            val familiares = "Familiares"
+            val gineco = "Gineco"
+            val trauma = "Trauma:"
+            val otros = "Otro:"
+
+            val b4_date6 = b4_date6.text.toString().trim()
+            val b4_date7 = b4_date7.text.toString().trim()
+            val b4_date8 = b4_date8.text.toString().trim()
+            val b4_date9 = b4_date9.text.toString().trim()
+            val b4_date10 = b4_date10.text.toString().trim()
+            val b4_date11 = b4_date11.text.toString().trim()
+            val b4_date12 = b4_date12.text.toString().trim()
+            val b4_date13 = b4_date13.text.toString().trim()
+            val b4_date14 = b4_date14.text.toString().trim()
+            val b4_date15 = b4_date15.text.toString().trim()
+            val b4_date16 = b4_date16.text.toString().trim()
+
+            mDoc.add(Paragraph(antecedentes, fuente_black))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(patologico + b4_date6, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(quirurgico + b4_date7, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(alergico + b4_date8, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(farmacologico + b4_date9, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(toxico + b4_date10, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(host + b4_date11, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(ocupacional + b4_date12, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(familiares + b4_date13, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(gineco + b4_date14, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(trauma + b4_date15, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(otros + b4_date16, letra))
 
             mDoc.addAuthor("Tecno-Design")
             mDoc.close()
