@@ -39,58 +39,61 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn_grabar_l"
+                    android:layout_width="71dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:background="@drawable/botones_registros"
                     android:text="@string/grabar"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    android:layout_marginLeft="60dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="10dp" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn_stop_l"
+                    android:layout_width="74dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/botones_registros"
                     android:text="@string/detener"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/textView"
-                    app:layout_constraintHorizontal_bias="0.521"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintEnd_toStartOf="@+id/btn_reproducir_l"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toEndOf="@+id/btn_grabar_l"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="10dp" />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="32dp"
+                <Button
+                    android:id="@+id/btn_reproducir_l"
+                    android:layout_width="93dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/botones_registros"
                     android:text="@string/reproducir"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/textView4"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="211dp"
+                    tools:layout_editor_absoluteY="10dp" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="36dp"
+                <Button
+                    android:id="@+id/btn_detener_repro_l"
+                    android:layout_width="79dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/botones_registros"
                     android:text="@string/d_repro"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="10dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -106,25 +109,26 @@
                 android:layout_gravity="center">
 
                 //Boton para Grabar
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/btn_grabar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="50dp"
-                    android:background="@drawable/icon_grabar"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-                    tools:layout_editor_absoluteY="0dp" />
 
                 //Boton para detener Grabacion
 
                 //Boton para reproducir Grabacion
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/btn_grabar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="36dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteY="0dp" />
+
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_stop"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/icon_stop"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir"
+                    app:layout_constraintHorizontal_bias="0.464"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar"
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
@@ -133,8 +137,7 @@
                     android:id="@+id/btn_reproducir"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_marginEnd="28dp"
-                    android:background="@drawable/icon_play"
+                    android:layout_marginEnd="36dp"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro"
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
@@ -144,7 +147,6 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="28dp"
-                    android:background="@drawable/icon_stop1"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
@@ -153,7 +155,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp"/>
+                android:layout_height="wrap_content" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -196,7 +198,7 @@
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="40dp" />
+                        android:layout_height="20dp" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -224,7 +226,7 @@
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" />
+                        android:layout_height="20dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -279,7 +281,7 @@
 
                     <Space
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"/>
+                        android:layout_height="20dp"/>
 
 
                     <TextView
@@ -290,7 +292,9 @@
                         android:text="@string/tripulacion"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"/>
 
 
                 <LinearLayout
@@ -360,7 +364,8 @@
                         android:text="@string/evaluacion"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -386,8 +391,9 @@
                         android:layout_height="10dp" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:text="@string/t_atencion"
@@ -459,7 +465,8 @@
                         android:text="@string/d_personal"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -514,7 +521,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/t_documento"/>
+                        android:hint="@string/t_documento"
+                        android:minHeight="48dp" />
 
                 </LinearLayout>
 
@@ -555,7 +563,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/m_pre"/>
+                        android:hint="@string/m_pre"
+                        android:minHeight="48dp" />
 
                     <EditText
                         android:id="@+id/b3_date8"
@@ -670,7 +679,8 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/m_consulta"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -685,7 +695,7 @@
                         android:hint="@string/descripcion_2"
                         android:background="@drawable/stylo_bordes"/>
 
-                    //"Enfermedad Actual
+                    //Enfermedad Actual
                     <TextView
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
@@ -694,7 +704,8 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/enfermedad"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -721,7 +732,8 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/r_sistemas"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -743,6 +755,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/c_2"
+                        android:minHeight="48dp"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <EditText
@@ -752,7 +765,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/c_3"
-                        android:minHeight="48dp" />
+                        android:minHeight="48dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     //Antecedentes
 
@@ -764,7 +778,8 @@
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/antecedentes"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -863,7 +878,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/familiares"/>
+                            android:hint="@string/familiares"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -914,7 +930,8 @@
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:text="@string/e_fisicos"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"/>
 
                     </LinearLayout>
 
@@ -1683,7 +1700,8 @@
                         android:text="@string/a_caso"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
 
                     </LinearLayout>
 
@@ -1697,7 +1715,8 @@
                             android:layout_width="@dimen/anchocuadrado"
                             android:layout_height="@dimen/largocuadrado"
                             android:layout_margin="20sp"
-                            android:hint="@string/b10_date1" />
+                            android:hint="@string/b10_date1"
+                            android:layout_gravity="center"/>
 
                     </LinearLayout>
 
@@ -1720,7 +1739,8 @@
                             android:text="@string/i_diagnostica"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
 
                     </LinearLayout>
 
@@ -1809,7 +1829,8 @@
                             android:text="@string/d_paciente"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
 
                     </LinearLayout>
 

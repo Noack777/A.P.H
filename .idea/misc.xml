@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/drawable/boton_login.xml" value="0.37864583333333335" />
+        <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/drawable/botones_registros.xml" value="0.37864583333333335" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/drawable/fondo_scroll_inicio.xml" value="0.37864583333333335" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/activity_auth.xml" value="0.33" />
         <entry key="..\:/Android Studio/Proyectos/Robinsson/Aph con curso/app/src/main/res/layout/fragment_inicio.xml" value="0.5" />

@@ -5,6 +5,8 @@
 
         <shape android:shape="rectangle">
 
+            <corners android:radius="10dp"/>
+
             <gradient
 
                 android:startColor="@color/teal_200"
@@ -12,6 +14,7 @@
                 android:endColor="@color/white"
                 android:type="linear"
                 android:angle="270"/>
+
 
 
         </shape>
