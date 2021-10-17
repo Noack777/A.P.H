@@ -45,7 +45,8 @@
                     android:textColor="@color/white"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <Button
                     android:id="@+id/btn_stop_l"
@@ -58,7 +59,8 @@
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir_l"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar_l"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 <Button
                     android:id="@+id/btn_reproducir_l"
@@ -71,7 +73,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro_l"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
                 <Button
                     android:id="@+id/btn_detener_repro_l"
@@ -83,7 +86,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="MissingConstraints" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -102,11 +106,6 @@
                 android:layout_gravity="center">
 
                 //Boton para Grabar
-
-                //Boton para detener Grabacion
-
-                //Boton para reproducir Grabacion
-
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_grabar"
                     android:layout_width="60dp"
@@ -116,6 +115,7 @@
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
+                //Boton para detener Grabacion
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_stop"
                     android:layout_width="60dp"
@@ -126,6 +126,7 @@
                     tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
+                //Boton para reproducir Grabacion
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/btn_reproducir"
                     android:layout_width="60dp"
@@ -1672,6 +1673,14 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
                             android:hint="@string/b9_date9"/>
+
+                        <EditText
+                            android:id="@+id/b9_date10"
+                            android:layout_width="@dimen/anchocuadrado"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/b9_date10"/>
 
                     </LinearLayout>
 

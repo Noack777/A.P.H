@@ -649,7 +649,331 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(otros + b4_date16, letra))
 
+            mDoc.add(Paragraph("   "))
 
+            //Pagina 3 Examenes Examenes Fisicos
+            //Titulo
+            val tit___ = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
+            mDoc.add(Paragraph(tit___,fuente))
+
+            //Titulo 2
+            val tit___2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit___2, Estantit))
+
+            //Titulo3
+            val tit___3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit___3, letra))
+
+            //Titulo4
+            val tit___4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit___4, letra))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+
+            //Examenes Fisicos
+
+            val examen = "Examenes Fisicos"
+            val signos_1 = "Signos Vitales 1"
+
+            mDoc.add(Paragraph(espacio + espacio2 + examen, Estantit))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(espacio + espacio + espacio3 + signos_1, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Datos de Examenes Fisicos
+
+            val ta = "TA:"
+            val slash = "/"
+            val tam = "TAM:"
+            val fc = "FC:"
+            val xfr = "X\'FR:"
+            val xtemp = "X\'Temp:"
+            val sat = "°C Sat.02:"
+            val fio = "%FiO2:"
+            val gluco = "Glucometría:"
+            val hora = "Hora:"
+
+            val b5_date1 = b5_date1.text.toString().trim()
+            val b5_date2 = b5_date2.text.toString().trim()
+            val b5_date3 = b5_date3.text.toString().trim()
+            val b5_date4 = b5_date4.text.toString().trim()
+            val b5_date5 = b5_date5.text.toString().trim()
+            val b5_date6 = b5_date6.text.toString().trim()
+            val b5_date7 = b5_date7.text.toString().trim()
+            val b5_date8 = b5_date8.text.toString().trim()
+            val b5_date9 = b5_date9.text.toString().trim()
+            val b5_date10 =b5_date10.text.toString().trim()
+
+            mDoc.add(Paragraph(ta + b5_date1 + slash + b5_date2 + tam + b5_date3 + fc + b5_date4 + xfr + b5_date5 + xtemp + b5_date6 + sat + b5_date7 + fio + b5_date8 + gluco + b5_date9 + hora + b5_date10))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Signos Vitales 2
+
+            val signos_2 = "Signos Vitales 2"
+            mDoc.add(Paragraph(espacio + espacio + espacio3 + signos_2, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Datos de Examenes Fisicos 2
+            val b6_date1 = b6_date1.text.toString().trim()
+            val b6_date2 = b6_date2.text.toString().trim()
+            val b6_date3 = b6_date3.text.toString().trim()
+            val b6_date4 = b6_date4.text.toString().trim()
+            val b6_date5 = b6_date5.text.toString().trim()
+            val b6_date6 = b6_date6.text.toString().trim()
+            val b6_date7 = b6_date7.text.toString().trim()
+            val b6_date8 = b6_date8.text.toString().trim()
+            val b6_date9 = b6_date9.text.toString().trim()
+            val b6_date10 =b6_date10.text.toString().trim()
+
+            mDoc.add(Paragraph(ta + b6_date1 + slash + b6_date2 + tam + b6_date3 + fc + b6_date4 + xfr + b6_date5 + xtemp + b6_date6 + sat + b6_date7 + fio + b6_date8 + gluco + b6_date9 + hora + b6_date10))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Signos Vitales 3
+
+            val signos_3 = "Signos Vitales 3"
+            mDoc.add(Paragraph(espacio + espacio + espacio3 + signos_3, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Datos de Examenes Fisicos 3
+            val b7_date1 = b7_date1.text.toString().trim()
+            val b7_date2 = b7_date2.text.toString().trim()
+            val b7_date3 = b7_date3.text.toString().trim()
+            val b7_date4 = b7_date4.text.toString().trim()
+            val b7_date5 = b7_date5.text.toString().trim()
+            val b7_date6 = b7_date6.text.toString().trim()
+            val b7_date7 = b7_date7.text.toString().trim()
+            val b7_date8 = b7_date8.text.toString().trim()
+            val b7_date9 = b7_date9.text.toString().trim()
+            val b7_date10 =b7_date10.text.toString().trim()
+
+            mDoc.add(Paragraph(ta + b7_date1 + slash + b7_date2 + tam + b7_date3 + fc + b7_date4 + xfr + b7_date5 + xtemp + b7_date6 + sat + b7_date7 + fio + b7_date8 + gluco + b7_date9 + hora + b7_date10, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Cajas de Check
+
+            val paciente = "Paciente Quemado"
+            val si = "Si:"
+            val no = "No:"
+            val superficie = "%Superficie Corporal Quemada (SCQ)"
+
+            val b8_date1 = b8_date1.text.toString().trim()
+            val b8_date2 = b8_date2.text.toString().trim()
+            val b8_date3 = b8_date3.text.toString().trim()
+
+            mDoc.add(Paragraph(paciente + si + b8_date1 + no + b8_date2 + espacio3 + superficie + b8_date3, letra))
+            mDoc.add(Paragraph("   "))
+
+            //Escalas
+
+            val escalas = "Escalas:Glasgow:/15 Cincinnati:Paresia Facial"
+            val b8_date4 = b8_date4.text.toString().trim()
+            val b8_date5 = b8_date5.text.toString().trim()
+
+            mDoc.add(Paragraph(escalas + espacio3 + si + b8_date4 + no + b8_date5, letra))
+            mDoc.add(Paragraph("   "))
+
+            //Caida del Brazo
+            val brazo = "Caida del Brazo"
+            val t_lenguaje = "Trastorno del Lenguaje"
+
+            val b8_date6 = b8_date6.text.toString().trim()
+            val b8_date7 = b8_date7.text.toString().trim()
+            val b8_date8 = b8_date8.text.toString().trim()
+            val b8_date9 = b8_date9.text.toString().trim()
+
+            mDoc.add(Paragraph(brazo + si + b8_date6 + no + b8_date7 + espacio2 + t_lenguaje + si + b8_date8 + no + b8_date9, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Estado General
+            val e_gen = "Estado General"
+            val c_c = "Cabeza y Cuello"
+            val torax = "Tórax"
+            val abdomen = "Abdomen"
+            val pelvis = "Pelvis"
+            val gen = "Genitourinario"
+            val ex = "Extremidades"
+            val osteo = "Osteomuscular"
+            val piel = "Piel y Faneras"
+            val neuro = "Neurológico"
+
+            val b9_date1 = b9_date1.text.toString().trim()
+            val b9_date2 = b9_date2.text.toString().trim()
+            val b9_date3 = b9_date3.text.toString().trim()
+            val b9_date4 = b9_date4.text.toString().trim()
+            val b9_date5 = b9_date5.text.toString().trim()
+            val b9_date6 = b9_date6.text.toString().trim()
+            val b9_date7 = b9_date7.text.toString().trim()
+            val b9_date8 = b9_date8.text.toString().trim()
+            val b9_date9 = b9_date9.text.toString().trim()
+            val b9_date10 = b9_date10.text.toString().trim()
+
+            mDoc.add(Paragraph(e_gen, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date1, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Pagina 4
+            //Titulo
+            val tit____ = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
+            mDoc.add(Paragraph(tit____,fuente))
+
+            //Titulo 2
+            val tit____2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit___2, Estantit))
+
+            //Titulo3
+            val tit____3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit____3, letra))
+
+            //Titulo4
+            val tit____4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit____4, letra))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(c_c, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date2, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(torax, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date3, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(abdomen, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date4, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(pelvis, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date5, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(gen, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date6, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(ex, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date7, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(osteo, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date8, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Pagina 5
+            //Titulo
+            val tit_____ = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
+            mDoc.add(Paragraph(tit_____,fuente))
+
+            //Titulo 2
+            val tit_____2 = "                            Facultad de Medicina y Ciencia de la Salud"
+            mDoc.add (Paragraph(tit____2, Estantit))
+
+            //Titulo3
+            val tit_____3 = "                                                  Tecnologí en Atención Prehospitalaria"
+            mDoc.add (Paragraph(tit_____3, letra))
+
+            //Titulo4
+            val tit_____4 = "                                                           Rotaciones Clínicas 2019-2"
+            mDoc.add (Paragraph(tit_____4, letra))
+
+            //Espacio
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(piel, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date9, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(neuro, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b9_date10, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Analisis del caso
+            val a_caso = "Analisis del Caso"
+            val i_diagnostica = "Impresión Diagnóstica (Sospecha o probable Diagnóstico)"
+            val plan = "Plan y Manejo"
+            val p1 = "Propuesto por la Tripulación o Personal o Intrahospitalario"
+            val p2 = "Propuesto por Usted como Tecnólogo en APH"
+            val d_paciente = "Descripción de la entrega del Paciente"
+
+            val b10_date1 = b10_date1.text.toString().trim()
+            val b10_date2 = b10_date2.text.toString().trim()
+            val b10_date3 = b10_date3.text.toString().trim()
+            val b10_date4 = b10_date4.text.toString().trim()
+            val b10_date5 = b10_date5.text.toString().trim()
+
+            mDoc.add(Paragraph(a_caso, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b10_date1, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(i_diagnostica, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b10_date2, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(espacio + espacio + plan, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(p1, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b10_date3, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(p2, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b10_date4, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            mDoc.add(Paragraph(d_paciente, negrilla))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph(b10_date5, letra))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+            mDoc.add(Paragraph("   "))
+
+            //Creditos
+
+            val elaborado = "Elaborado Por:" //Tecno-Design
+            val vo_bo = "VO BO"
+
+            mDoc.add(Paragraph(elaborado + espacio + espacio + vo_bo, negrilla))
 
             mDoc.addAuthor("Tecno-Design")
             mDoc.close()
@@ -662,8 +986,4 @@ class InicioActivity : AppCompatActivity() {
             Toast.makeText(this, ""+i.toString(), Toast.LENGTH_SHORT).show()
         }
     }
-
-
-
-
 }
