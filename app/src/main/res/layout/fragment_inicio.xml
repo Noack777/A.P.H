@@ -404,7 +404,8 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:hint="@string/c_atencion"
-                            android:inputType="date"/>
+                            android:inputType="date"
+                            android:minHeight="48dp" />
 
                         <EditText
                             android:id="@+id/b2_date4"
@@ -413,7 +414,8 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:hint="@string/f_atencion"
-                            android:inputType="date"/>
+                            android:inputType="date"
+                            android:minHeight="48dp" />
 
                     </LinearLayout>
                     <Space
@@ -624,7 +626,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/telefono"/>
+                        android:hint="@string/telefono"
+                        android:minHeight="48dp" />
 
                 </LinearLayout>
 
@@ -841,7 +844,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/host"/>
+                            android:hint="@string/host"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
