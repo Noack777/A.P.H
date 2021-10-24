@@ -46,7 +46,7 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/btn_stop_l"
@@ -59,8 +59,8 @@
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir_l"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar_l"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <Button
                     android:id="@+id/btn_reproducir_l"
@@ -73,8 +73,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro_l"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <Button
                     android:id="@+id/btn_detener_repro_l"
@@ -86,8 +86,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -259,6 +259,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="50dp"
                             android:hint="@string/fecha"
+                            android:inputType="date"
                             android:minHeight="48dp" />
 
 
@@ -268,6 +269,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:hint="@string/ambulancia"
+                            android:inputType="date"
                             android:minHeight="48dp" />
 
 
@@ -345,7 +347,78 @@
                         android:minHeight="48dp" />
 
                 </LinearLayout>
+                    //Inicio de Informacion Bloque 2
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/t_atencion"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/b2_date1"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/despacho"
+                            android:inputType="date"
+                            android:minHeight="48dp" />
+
+                        <EditText
+                            android:id="@+id/b2_date2"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/en_la_escena"
+                            android:inputType="date"
+                            android:minHeight="48dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/b2_date3"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/c_atencion"
+                            android:inputType="date"/>
+
+                        <EditText
+                            android:id="@+id/b2_date4"
+                            android:layout_width="@dimen/anchogen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/f_atencion"
+                            android:inputType="date"/>
+
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="30dp"/>
@@ -379,74 +452,9 @@
 
                     //Fin de Informacion del Bloque 1
 
-                    //Inicio de Informacion Bloque 2
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/t_atencion"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center">
 
-                    <EditText
-                        android:id="@+id/b2_date1"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/despacho"
-                        android:minHeight="48dp" />
-
-                    <EditText
-                        android:id="@+id/b2_date2"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/en_la_escena"
-                        android:minHeight="48dp" />
-
-                    </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
-
-                    <EditText
-                        android:id="@+id/b2_date3"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/c_atencion" />
-
-                    <EditText
-                        android:id="@+id/b2_date4"
-                        android:layout_width="@dimen/anchogen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/f_atencion" />
-
-                </LinearLayout>
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"/>
 
                     //Final de Informacion Bloque 2
 
@@ -591,6 +599,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
+                        android:inputType="date"
                         android:hint="@string/edad"/>
 
                 </LinearLayout>
@@ -742,25 +751,6 @@
                         android:hint="@string/c_1"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-                    <EditText
-                        android:id="@+id/b4_date4"
-                        android:layout_width="@dimen/anchocuadrado"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/c_2"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
-
-                    <EditText
-                        android:id="@+id/b4_date5"
-                        android:layout_width="@dimen/anchocuadrado"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:hint="@string/c_3"
-                        android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck" />
 
                     //Antecedentes
 
@@ -789,6 +779,7 @@
                             android:layout_marginTop="10dp"
                             android:hint="@string/patologico"/>
 
+
                         <Space
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
@@ -816,6 +807,8 @@
                         <Space
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
+
+
 
                         <EditText
                             android:id="@+id/b4_date9"
@@ -978,6 +971,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:inputType="date"
                             android:text="@string/slash"
                             android:textColor="@color/black"/>
 
@@ -985,6 +979,7 @@
                             android:id="@+id/b5_date2"
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
+                            android:inputType="date"
                             android:hint="@string/b5_date2"/>
 
                         <TextView
@@ -996,7 +991,7 @@
 
                         <EditText
                             android:id="@+id/b5_date3"
-                            android:layout_width="40dp"
+                            android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date3"/>
 
@@ -1022,34 +1017,32 @@
 
                         <EditText
                             android:id="@+id/b5_date5"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date5"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/xfr"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
 
-                        <EditText
-                            android:id="@+id/b5_date6"
-                            android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/b5_date6"/>
 
                     </LinearLayout>
 
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="10dp"/>
-
-                    //Parte 2
                     <LinearLayout
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xtemp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/b5_date6"
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/b5_date6"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1073,37 +1066,55 @@
 
                         <EditText
                             android:id="@+id/b5_date8"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date8"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/gluco"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:textColor="@color/black"/>
+
 
                         <EditText
                             android:id="@+id/b5_date9"
-                            android:layout_width="60dp"
+                            android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date9"/>
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/hora"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
                         <EditText
                             android:id="@+id/b5_date10"
-                            android:layout_width="40dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date10"/>
 
+
                     </LinearLayout>
+
 
                     <Space
                         android:layout_width="match_parent"
@@ -1172,7 +1183,7 @@
 
                         <EditText
                             android:id="@+id/b6_date3"
-                            android:layout_width="40dp"
+                            android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date3"/>
 
@@ -1198,35 +1209,36 @@
 
                         <EditText
                             android:id="@+id/b6_date5"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date5"/>
 
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/xfr_2"
+                            android:text="@string/xtemp"
+                            android:layout_marginLeft="10dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/b6_date6"
-                            android:layout_width="40dp"
+                            android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date6"/>
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="10dp"/>
-
-                    //Parte 2
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1250,20 +1262,36 @@
 
                         <EditText
                             android:id="@+id/b6_date8"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date8"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/gluco_2"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/b6_date9"
-                            android:layout_width="60dp"
+                            android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date9"/>
 
@@ -1276,7 +1304,7 @@
 
                         <EditText
                             android:id="@+id/b6_date10"
-                            android:layout_width="40dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date10"/>
 
@@ -1350,7 +1378,7 @@
 
                         <EditText
                             android:id="@+id/b7_date3"
-                            android:layout_width="40dp"
+                            android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date3"/>
 
@@ -1376,36 +1404,33 @@
 
                         <EditText
                             android:id="@+id/b7_date5"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date5"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/xfr_3"
+                            android:text="@string/xtemp"
+                            android:layout_marginLeft="10dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/b7_date6"
-                            android:layout_width="40dp"
+                            android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date6"/>
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="10dp"/>
-
-                    //Parte 2
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1428,20 +1453,36 @@
 
                         <EditText
                             android:id="@+id/b7_date8"
-                            android:layout_width="40dp"
+                            android:layout_width="30dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date8"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+
+                    //Parte 2
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/gluco_3"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/b7_date9"
-                            android:layout_width="60dp"
+                            android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date9"/>
 
@@ -1454,7 +1495,7 @@
 
                         <EditText
                             android:id="@+id/b7_date10"
-                            android:layout_width="40dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date10"/>
 
@@ -1475,6 +1516,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:text="@string/paciente"/>
 
                         <EditText
@@ -1525,19 +1567,48 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:text="@string/escalas"/>
 
                         <EditText
-                            android:id="@+id/b8_date4"
+                            android:id="@+id/b8_date10"
                             android:layout_width="30dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b8_date4"/>
+                            android:hint="@string/b8_date10"/>
 
-                        <EditText
-                            android:id="@+id/b8_date5"
-                            android:layout_width="40dp"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b8_date5"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="/15"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/Glasgow"/>
+
+                            <EditText
+                                android:id="@+id/b8_date4"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/b8_date4"/>
+
+                            <EditText
+                                android:id="@+id/b8_date5"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/b8_date5"/>
 
                     </LinearLayout>
 
@@ -1556,6 +1627,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
                             android:text="@string/brazo"/>
 
                         <EditText
