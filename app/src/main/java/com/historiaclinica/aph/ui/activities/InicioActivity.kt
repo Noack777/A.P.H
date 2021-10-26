@@ -168,10 +168,10 @@ class InicioActivity : AppCompatActivity() {
 
         finalizar.setOnClickListener {
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M){
-                if (checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     == PackageManager.PERMISSION_DENIED
                 ){
-                    val permission = arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION)
+                    val permission = arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     requestPermissions(permission, STORAGE_CODE)
                 }else{
                     savePDF()
