@@ -46,7 +46,7 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/btn_stop_l"
@@ -59,8 +59,8 @@
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_reproducir_l"
                     app:layout_constraintStart_toEndOf="@+id/btn_grabar_l"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <Button
                     android:id="@+id/btn_reproducir_l"
@@ -73,8 +73,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/btn_detener_repro_l"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
                 <Button
                     android:id="@+id/btn_detener_repro_l"
@@ -86,8 +86,8 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteY="0dp" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
