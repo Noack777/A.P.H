@@ -1036,8 +1036,7 @@
                         <EditText
                             android:id="@+id/b5_date6"
                             android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/b5_date6"/>
+                            android:layout_height="wrap_content"/>
 
                     </LinearLayout>
 
@@ -1061,8 +1060,7 @@
                         <EditText
                             android:id="@+id/b5_date7"
                             android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/b5_date7"/>
+                            android:layout_height="wrap_content"/>
 
                         <TextView
                             android:layout_width="wrap_content"

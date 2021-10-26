@@ -10,14 +10,19 @@
     <uses-permission
         android:name="android.permission.ACCESS_COARSE_LOCATION"
         tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar"
-        android:requestLegacyExternalStorage = "true">
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".ui.activities.terminos_condiciones"
+            android:exported="false" />
         <activity
             android:name=".ui.activities.InicioActivity"
             android:exported="true" />
@@ -47,11 +52,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
     </application>
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 </manifest>
