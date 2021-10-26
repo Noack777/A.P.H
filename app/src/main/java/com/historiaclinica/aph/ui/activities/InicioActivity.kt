@@ -28,7 +28,9 @@ import com.itextpdf.text.Paragraph
 import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_inicio.*
 import java.io.FileOutputStream
+import java.io.FileWriter
 import java.io.IOException
+import java.nio.file.Files
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -134,11 +136,10 @@ class InicioActivity : AppCompatActivity() {
         //logica boton reproducir
         btn_reproducir_l.setOnClickListener {
             mostrarmensaje2()
-            restaurar_play(btn_reproducir)
             restaurar_Grabar(btn_grabar)
             restaurar_stop1(btn_detener_repro)
             restaurar_stop(btn_stop)
-            cambio2 = cambio_icon(btn_reproducir, R.raw.animation_play, cambio2)
+            cambio2 = cambio_icon2(btn_reproducir, R.raw.animation_play, cambio2)
             player = MediaPlayer().apply {
                 try {
                     setDataSource(fileName)
@@ -158,7 +159,7 @@ class InicioActivity : AppCompatActivity() {
             restaurar_Grabar(btn_grabar)
             restaurar_stop(btn_stop)
             restaurar_play(btn_reproducir)
-            cambio3 = cambio_icon(btn_detener_repro, R.raw.animation_stop, cambio3)
+            cambio3 = cambio_icon3(btn_detener_repro, R.raw.animation_stop, cambio3)
         }
 
         //PARTE LOGICA CREACION PDF
@@ -167,10 +168,10 @@ class InicioActivity : AppCompatActivity() {
 
         finalizar.setOnClickListener {
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M){
-                if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                if (checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION)
                     == PackageManager.PERMISSION_DENIED
                 ){
-                    val permission = arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                    val permission = arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION)
                     requestPermissions(permission, STORAGE_CODE)
                 }else{
                     savePDF()
@@ -268,7 +269,7 @@ class InicioActivity : AppCompatActivity() {
         val mFileName = SimpleDateFormat("yyyHHdd_HHmmss", Locale.getDefault())
             .format(System.currentTimeMillis())
 
-        val mFilepath = Environment.getExternalStorageDirectory().toString() + "/" + mFileName + ".pdf"
+        val mFilepath = Environment.getExternalStorageState().toString() + "/" + "Historia Clinica" + "/" + mFileName + ".pdf"
 
 
         try {

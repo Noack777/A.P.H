@@ -22,7 +22,7 @@ class SplashscreeActivity : AppCompatActivity() {
         logotecno.startAnimation(animation1)
         nombretecno.startAnimation(animation1)
 
-        val intent = Intent(this, AuthActivity::class.java)
+        val intent = Intent(this, terminos_condiciones::class.java)
 
         animation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(p0: Animation?) {
@@ -39,12 +39,8 @@ class SplashscreeActivity : AppCompatActivity() {
             override fun onAnimationRepeat(p0: Animation?) {
             }
 
-        })
+        }
 
-
-
+        )
     }
-
-
-
 }

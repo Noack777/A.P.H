@@ -8,7 +8,7 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
         tools:ignore="CoarseFineLocation" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,11 +20,9 @@
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Prueba"
+            android:name=".ui.activities.terminos_condiciones"
             android:exported="false" />
         <activity
             android:name=".ui.activities.InicioActivity"
