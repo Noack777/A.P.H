@@ -16,7 +16,6 @@ class AuthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
-
         // Analytics Event
         val analytics:FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
         val bundle = Bundle()
@@ -35,12 +34,9 @@ class AuthActivity : AppCompatActivity() {
 
     }
 
-
-
     private fun setup() {
 
         //Logica del Boton de ingreso
-
         botonlogin.setOnClickListener{
 
             if (codigologueo.text.isNotEmpty() && Contrasenia.text.isNotEmpty()) {
@@ -55,7 +51,6 @@ class AuthActivity : AppCompatActivity() {
                         } else {
 
                             showAlert()
-
                         }
                     }
             }
@@ -63,7 +58,6 @@ class AuthActivity : AppCompatActivity() {
         }
 
     }
-
 
     private fun showAlert (){
 

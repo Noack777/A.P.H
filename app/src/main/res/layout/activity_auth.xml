@@ -84,8 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
-
-
         //boton para loguear el usuario
         <Button
             android:id="@+id/botonlogin"
@@ -108,9 +106,6 @@
             android:layout_marginTop="20dp"
             tools:ignore="MissingConstraints" />
 
-
-
     </LinearLayout>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

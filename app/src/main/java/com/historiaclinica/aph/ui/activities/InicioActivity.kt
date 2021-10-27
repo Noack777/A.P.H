@@ -45,17 +45,14 @@ private const val REQUEST_RECORD_AUDIO_PERMISSION = 200
 
 class InicioActivity : AppCompatActivity() {
 
-
     //variables grabar audio
     private var fileName: String = ""
     private var recorder: MediaRecorder? = null
     private var player: MediaPlayer? = null
 
-
     // Requesting permission to RECORD_AUDIO
     private var permissionToRecordAccepted = false
     private var permissions: Array<String> = arrayOf(Manifest.permission.RECORD_AUDIO)
-
 
     //permiso para dispositivo
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray
@@ -67,7 +64,6 @@ class InicioActivity : AppCompatActivity() {
                 }else{
                     Toast.makeText(this, "Permiso denegado", Toast.LENGTH_SHORT).show()
                 }
-
             }
         }
 
@@ -89,15 +85,14 @@ class InicioActivity : AppCompatActivity() {
 
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION)
 
-
         //logica boton grabar
-
         var cambio = false
         var cambio1 = false
         var cambio2 = false
         var cambio3 = false
 
         btn_grabar_l.setOnClickListener {
+
             mostrarmensaje()
             restaurar_play(btn_reproducir)
             restaurar_stop(btn_stop)
@@ -115,12 +110,11 @@ class InicioActivity : AppCompatActivity() {
                 }
                 start()
             }
-
-
         }
 
         //logica boton detener grabar
         btn_stop_l.setOnClickListener {
+
             restaurar_play(btn_reproducir)
             restaurar_Grabar(btn_grabar)
             restaurar_stop1(btn_detener_repro)
@@ -135,6 +129,7 @@ class InicioActivity : AppCompatActivity() {
 
         //logica boton reproducir
         btn_reproducir_l.setOnClickListener {
+
             mostrarmensaje2()
             restaurar_Grabar(btn_grabar)
             restaurar_stop1(btn_detener_repro)
@@ -153,6 +148,7 @@ class InicioActivity : AppCompatActivity() {
 
         //logica boton de quitar
         btn_detener_repro_l.setOnClickListener {
+
             player?.release()
             player = null
             mostrarmensaje3()
@@ -165,8 +161,8 @@ class InicioActivity : AppCompatActivity() {
         //PARTE LOGICA CREACION PDF
         et_pdf_data = findViewById(R.id.b1_date1)
 
-
         finalizar.setOnClickListener {
+
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M){
                 if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     == PackageManager.PERMISSION_DENIED
@@ -182,7 +178,6 @@ class InicioActivity : AppCompatActivity() {
         }
 
     }
-
 
     //Logica para cambiar de icono al presionar el boton
     private fun cambio_icon(imageView: LottieAnimationView, animation: Int,cambio: Boolean) : Boolean {
@@ -226,7 +221,6 @@ class InicioActivity : AppCompatActivity() {
         return !cambio3
     }
 
-
     //logica para mostrar mensajes al presiomar el boton
     private fun mostrarmensaje() {
         Toast.makeText(this, "Grabación Iniciada", Toast.LENGTH_LONG).show()
@@ -240,7 +234,6 @@ class InicioActivity : AppCompatActivity() {
     private fun mostrarmensaje3() {
         Toast.makeText(this, "Reproducción Finalizada", Toast.LENGTH_LONG).show()
     }
-
 
     // funcion  Restaurar
     private fun restaurar_Grabar(imageView: LottieAnimationView) {
@@ -256,13 +249,11 @@ class InicioActivity : AppCompatActivity() {
         imageView.setImageResource(R.drawable.icon_stop1)
     }
 
-
     //Inicio Proceso de PDF
     //variables guardar pdf
     private lateinit var et_pdf_data : EditText
     private lateinit var btn_generar_Pdf : EditText
     private val STORAGE_CODE = 1001
-
 
     private fun savePDF() {
         val mDoc = Document()
@@ -293,13 +284,12 @@ class InicioActivity : AppCompatActivity() {
 
             //Espacio Horizontal 3
             val espacio3 = "              "
+
             //Espacio Horizontal 4
             val espacio4 = "       "
 
-
             //Espacio Horizontal 5
             val espacio5= "   "
-
 
             //Letra Normal Tamaño 12
             val letra = Font()
@@ -330,7 +320,6 @@ class InicioActivity : AppCompatActivity() {
             fuente_black.setColor(BaseColor.BLACK)
             fuente_black.setSize(20F)
 
-
             //Titulo
             val tit = "          UNIVERSIDAD MILITAR NUEVA GRANADA"
             mDoc.add(Paragraph(tit,fuente))
@@ -356,7 +345,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Bloque 1 // tripulación
-
             val Info_trip = "INFORMACÍON DE LA TRIPULACIÓN Y EL TURNO"
             val fecha = "Fecha"
             val ambulancia = "Ambulancia"
@@ -365,14 +353,12 @@ class InicioActivity : AppCompatActivity() {
             val estudiante = "Estudiante"
             val otro = "Otro"
 
-
             val b1_date1 = b1_date1.text.toString().trim()
             val b1_date2 = b1_date2.text.toString().trim()
             val b1_date3 = b1_date3.text.toString().trim()
             val b1_date4 = b1_date4.text.toString().trim()
             val b1_date5 = b1_date5.text.toString().trim()
             val b1_date6 = b1_date6.text.toString().trim()
-
 
             mDoc.add(Paragraph(Info_trip, fuente_black))
 
@@ -386,14 +372,10 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Tiempo de atención
-
-
             val despacho = "Despacho"
             val en_escena = "En la Escena"
             val centro = "Centro de Atención (Destino)"
             val final_atencion = "Finalización de Atención"
-
-
 
             val b2_date1 = b2_date1.text.toString().trim()
             val b2_date2 = b2_date2.text.toString().trim()
@@ -405,19 +387,13 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Evaluación de la Escena
-
             val evaluacion = "Evaluación de la Escena"
             val b1_date7 = b1_date7.text.toString().trim()
 
             mDoc.add(Paragraph(evaluacion, fuente_black))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b1_date7, letra))
-
             mDoc.add(Paragraph("   "))
-
-            //Tiempo de Atencion
-
-
 
             //Datos Personales
             val datos = "1. DATOS PERSONALES"
@@ -457,40 +433,33 @@ class InicioActivity : AppCompatActivity() {
             val b3_date15 = b3_date15.text.toString().trim()
 
             mDoc.add(Paragraph(datos, fuente_black))
-
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph("   "))
 
             //Primer Apellido, Segundo Apellido, Nombres
             mDoc.add(Paragraph(p_apellido + espacio5 +b3_date1 + espacio4 + s_apellido + espacio5 +  b3_date2 + espacio4 + p_nombre + espacio5
                   +  b3_date3 + espacio4, negrilla))
-
             mDoc.add(Paragraph("   "))
 
             //Tipo de Documento, Numero de Documento, Eps, m-pre
             mDoc.add(Paragraph( t_documento + espacio5 + b3_date4 +espacio4+   n_documento + espacio5 + b3_date5 +espacio4 + eps + espacio5 +
                     b3_date6+ espacio4+ m_pre+ b3_date7 + espacio4  , negrilla))
-
             mDoc.add(Paragraph("   "))
 
             //Genero, Fecha de Nacimiento
             mDoc.add(Paragraph(genero + espacio5 + b3_date8 + espacio4+  f_nacimiento + espacio5 + b3_date9 + espacio4 + edad + b3_date10 + espacio4 , negrilla))
-
             mDoc.add(Paragraph("   "))
 
             // ciudad, Telefono, dirección.
             mDoc.add(Paragraph( ciudad + espacio5 + b3_date11 + espacio4  + telefono + espacio5 + b3_date12 + espacio4 + direccion +
                     espacio5 + b3_date13 + espacio4, negrilla))
-
             mDoc.add(Paragraph("   "))
 
             //Familiar/Acompañante, Contacto
             mDoc.add(Paragraph( f_a + espacio5 + espacio5 +  b3_date14 +espacio4 + contacto +  b3_date15 +espacio4, negrilla))
-
             mDoc.add(Paragraph("   "))
 
             //Motivo de la Consulta
-
             val m_consulta = "2. MOTIVO DE CONSULTA"
             val b4_date1 = b4_date1.text.toString().trim()
 
@@ -498,34 +467,25 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b4_date1, letra))
 
-
-
             //Enfermedad Actual
-
             val enfermedad = "3. ENFERMEDAD ACTUAL"
             val b4_date2 = b4_date2.text.toString().trim()
 
             mDoc.add(Paragraph(enfermedad, fuente_black))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b4_date2, letra))
-
             mDoc.add(Paragraph("   "))
 
             //Revision por Sistemas
-
             val r_sistemas = "4. REVISIÓN POR SISTEMAS"
             val b4_date3 = b4_date3.text.toString().trim()
-
 
             mDoc.add(Paragraph(r_sistemas, fuente_black))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b4_date3, letra))
-
-
             mDoc.add(Paragraph("   "))
 
             //Antecedentes
-
             val antecedentes = "Antecedentes:"
             val patologico = "Patológicos :"
             val quirurgico = "Quirurgicos:"
@@ -551,7 +511,6 @@ class InicioActivity : AppCompatActivity() {
             val b4_date15 = b4_date15.text.toString().trim()
             val b4_date16 = b4_date16.text.toString().trim()
 
-
             mDoc.add(Paragraph(antecedentes, fuente_black))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(patologico + espacio4+ b4_date6, letra))
@@ -575,13 +534,9 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph(trauma + espacio4+ b4_date15, letra))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(otros + espacio4+ b4_date16, letra))
-
             mDoc.add(Paragraph("   "))
 
-
-
             //Examenes Fisicos
-
             val examen = "6. EXAMEN FÍSICO"
             val signos_1 = "Signos Vitales 1"
 
@@ -591,7 +546,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Datos de Examenes Fisicos
-
             val ta = "TA: "
             val slash = "/"
             val tam = " TAM: "
@@ -618,7 +572,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Signos Vitales 2
-
             val signos_2 = "Signos Vitales 2"
             mDoc.add(Paragraph(espacio + espacio + espacio3 + signos_2, letra))
             mDoc.add(Paragraph("   "))
@@ -639,7 +592,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Signos Vitales 3
-
             val signos_3 = "Signos Vitales 3"
             mDoc.add(Paragraph(espacio + espacio + espacio3 + signos_3, letra))
             mDoc.add(Paragraph("   "))
@@ -660,7 +612,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Cajas de Check
-
             val paciente = "Paciente Quemado"
             val si = " Si: "
             val no = " No: "
@@ -674,7 +625,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
 
             //Escalas
-
             val escalas = "Escalas:Glasgow:/15 Cincinnati:Paresia Facial"
             val b8_date4 = b8_date4.text.toString().trim()
             val b8_date5 = b8_date5.text.toString().trim()
@@ -727,29 +677,24 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph(b9_date2, letra))
             mDoc.add(Paragraph("   "))
 
-
             mDoc.add(Paragraph(torax, negrilla))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b9_date3, letra))
             mDoc.add(Paragraph("   "))
-
 
             mDoc.add(Paragraph(abdomen, negrilla))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b9_date4, letra))
             mDoc.add(Paragraph("   "))
 
-
             mDoc.add(Paragraph(pelvis, negrilla))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b9_date5, letra))
             mDoc.add(Paragraph("   "))
 
-
             mDoc.add(Paragraph(gen, negrilla))
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b9_date6, letra))
-
 
             mDoc.add(Paragraph(ex, negrilla))
             mDoc.add(Paragraph("   "))
@@ -760,8 +705,6 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph("   "))
             mDoc.add(Paragraph(b9_date8, letra))
             mDoc.add(Paragraph("   "))
-
-            //Espacio
             mDoc.add(Paragraph("   "))
 
             mDoc.add(Paragraph(piel, negrilla))
@@ -814,9 +757,7 @@ class InicioActivity : AppCompatActivity() {
             mDoc.add(Paragraph(b10_date5, letra))
             mDoc.add(Paragraph("   "))
 
-
             //Creditos
-
             val elaborado = "Elaborado Por:" //Tecno-Design
             val vo_bo = "VO BO"
 

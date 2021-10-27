@@ -89,10 +89,7 @@
                     tools:ignore="MissingConstraints,TouchTargetSizeCheck"
                     tools:layout_editor_absoluteY="0dp" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
             <Space
                 android:layout_width="wrap_content"
@@ -149,7 +146,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -262,7 +259,6 @@
                             android:inputType="date"
                             android:minHeight="48dp" />
 
-
                         <EditText
                             android:id="@+id/b1_date2"
                             android:layout_width="@dimen/anchogen"
@@ -272,13 +268,11 @@
                             android:inputType="date"
                             android:minHeight="48dp" />
 
-
                     </LinearLayout>
 
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -291,7 +285,6 @@
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:layout_marginRight="20dp"/>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -326,7 +319,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-
 
                     <EditText
                         android:id="@+id/b1_date5"
@@ -377,7 +369,7 @@
                             android:layout_marginTop="10dp"
                             android:hint="@string/despacho"
                             android:inputType="date"
-                            android:minHeight="48dp" />
+                            android:minHeight="48dp"/>
 
                         <EditText
                             android:id="@+id/b2_date2"
@@ -387,7 +379,7 @@
                             android:layout_marginTop="10dp"
                             android:hint="@string/en_la_escena"
                             android:inputType="date"
-                            android:minHeight="48dp" />
+                            android:minHeight="48dp"/>
 
                     </LinearLayout>
 
@@ -449,13 +441,6 @@
                         android:hint="@string/descripcion" />
 
                 </LinearLayout>
-
-                    //Fin de Informacion del Bloque 1
-
-
-
-
-
                     //Final de Informacion Bloque 2
 
                     //Inicio de Informacion Bloque 3
@@ -549,7 +534,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/eps"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="TouchTargetSizeCheck"/>
 
                 </LinearLayout>
 
@@ -671,8 +656,8 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="30dp"/>
-
                     //Final de Informacion bloque 3
+
                     //Inicio de Informacion bloque 4 "Motivo de la Consulta"
                     <TextView
                         android:layout_width="250dp"
@@ -753,7 +738,6 @@
 
 
                     //Antecedentes
-
                     <TextView
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
@@ -770,7 +754,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-
                         <EditText
                             android:id="@+id/b4_date6"
                             android:layout_width="@dimen/anchocuadrado"
@@ -778,7 +761,6 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
                             android:hint="@string/patologico"/>
-
 
                         <Space
                             android:layout_width="match_parent"
@@ -807,8 +789,6 @@
                         <Space
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
-
-
 
                         <EditText
                             android:id="@+id/b4_date9"
@@ -1024,10 +1004,10 @@
                     </LinearLayout>
 
                     <LinearLayout
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1079,9 +1059,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-
-
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1096,6 +1073,7 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date9"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1109,9 +1087,7 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date10"/>
 
-
                     </LinearLayout>
-
 
                     <Space
                         android:layout_width="match_parent"
@@ -1210,20 +1186,14 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b6_date5"/>
 
-
-
                     </LinearLayout>
 
                     <LinearLayout
-
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-
                         <TextView
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/xtemp"
@@ -1275,9 +1245,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-
-
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1317,7 +1284,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center">
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1405,12 +1371,9 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/b7_date5"/>
 
-
-
                     </LinearLayout>
 
                     <LinearLayout
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
@@ -1465,9 +1428,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-
-
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1582,7 +1542,6 @@
                     </LinearLayout>
 
                     <LinearLayout
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
@@ -1795,7 +1754,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
 
-
                 //Impresion Diagnostica
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1884,7 +1842,6 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="20dp"/>
-
 
                     //Descripción de la entrega del paciente
                     <LinearLayout

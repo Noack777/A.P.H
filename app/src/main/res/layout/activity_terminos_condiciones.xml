@@ -106,7 +106,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,7 +122,6 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />
-
 
                 <TextView
                     android:layout_width="match_parent"
@@ -149,7 +147,6 @@
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />
-
 
                 <TextView
                     android:layout_width="match_parent"
@@ -183,7 +180,6 @@
                     android:text="@string/terminos_condiciones_l14"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
-
 
                 <TextView
                     android:layout_width="match_parent"
@@ -254,7 +250,6 @@
             </LinearLayout>
 
         </ScrollView>
-
 
     </RelativeLayout>
 

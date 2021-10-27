@@ -15,7 +15,6 @@ class SplashscreeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscree)
 
-
         val animation = AnimationUtils.loadAnimation(this, R.anim.animacion)
         val animation1 = AnimationUtils.loadAnimation(this, R.anim.animacion_abajo)
         logo1.startAnimation(animation)
