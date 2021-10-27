@@ -665,9 +665,10 @@
                         android:id="@+id/b3_date15"
                         android:layout_width="@dimen/anchogen"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:hint="@string/contacto"
-                        android:layout_marginLeft="10dp"/>
+                        android:minHeight="48dp" />
 
                 </LinearLayout>
 
@@ -997,7 +998,8 @@
                             android:id="@+id/b5_date3"
                             android:layout_width="52dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date3"/>
+                            android:hint="@string/b5_date3"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
