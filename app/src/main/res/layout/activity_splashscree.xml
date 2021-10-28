@@ -8,7 +8,6 @@
     android:background="@color/principal"
     tools:context=".ui.activities.SplashscreeActivity">
 
-
     <ImageView
         android:id="@+id/logo1"
         android:layout_width="wrap_content"
@@ -36,7 +35,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo1" />
+            app:layout_constraintTop_toBottomOf="@+id/logo1"
+            tools:ignore="NotSibling" />
 
         <ImageView
             android:id="@+id/nombretecno"
@@ -50,7 +50,5 @@
             app:layout_constraintTop_toBottomOf="@+id/logotecno" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

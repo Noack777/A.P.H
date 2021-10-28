@@ -1,9 +1,9 @@
 package com.historiaclinica.aph.ui.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.historiaclinica.aph.R
 import kotlinx.android.synthetic.main.fragment_login__admin.*
@@ -19,10 +19,10 @@ class Login_Admin_Activity : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             finish()
-
         }
 
         botonloginadmin.setOnClickListener {
+
             if (RContrasenia.text.toString().equals(coContrasenia.text.toString())){
                 if (nombreUsua.text!!.isNotEmpty() && RContrasenia.text!!.isNotEmpty()) {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(
@@ -49,7 +49,6 @@ class Login_Admin_Activity : AppCompatActivity() {
         builder.setPositiveButton("aceptar",null)
         val dialog : AlertDialog =builder.create()
         dialog.show()
-
     }
 
     private fun alerta(){
@@ -59,7 +58,6 @@ class Login_Admin_Activity : AppCompatActivity() {
         builder.setPositiveButton("aceptar",null)
         val dialog : AlertDialog =builder.create()
         dialog.show()
-
     }
 
     private fun regbien(email:String,provider:ProviderType){
@@ -72,4 +70,3 @@ class Login_Admin_Activity : AppCompatActivity() {
     }
 
 }
-
