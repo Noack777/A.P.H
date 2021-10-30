@@ -16,7 +16,7 @@
 
         <activity
             android:name=".ui.activities.terminos_condiciones"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.activities.InicioActivity"
             android:exported="true" />

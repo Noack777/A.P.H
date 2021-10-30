@@ -561,7 +561,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/genero"/>
+                        android:hint="@string/genero"
+                        android:minHeight="48dp" />
 
                 </LinearLayout>
 
@@ -586,8 +587,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
+                        android:hint="@string/edad"
                         android:inputType="date"
-                        android:hint="@string/edad"/>
+                        android:minHeight="48dp" />
 
                 </LinearLayout>
 
@@ -603,7 +605,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/ciudad"/>
+                        android:hint="@string/ciudad"
+                        android:minHeight="48dp" />
 
                     <EditText
                         android:id="@+id/b3_date12"
@@ -628,7 +631,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:hint="@string/direccion"/>
+                        android:hint="@string/direccion"
+                        android:minHeight="48dp" />
 
                     <EditText
                         android:id="@+id/b3_date14"
@@ -684,8 +688,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
+                        android:background="@drawable/stylo_bordes"
                         android:hint="@string/descripcion_2"
-                        android:background="@drawable/stylo_bordes"/>
+                        android:minHeight="48dp" />
 
                     //Enfermedad Actual
                     <TextView
@@ -709,8 +714,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
+                        android:background="@drawable/stylo_bordes"
                         android:hint="@string/descripcion_3"
-                        android:background="@drawable/stylo_bordes"/>
+                        android:minHeight="48dp" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -764,7 +770,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/patologico"/>
+                            android:hint="@string/patologico"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -776,7 +783,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/quirurgico"/>
+                            android:hint="@string/quirurgico"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -788,7 +796,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/alergico"/>
+                            android:hint="@string/alergico"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -800,7 +809,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/farmacologico"/>
+                            android:hint="@string/farmacologico"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -838,7 +848,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/ocupacional"/>
+                            android:hint="@string/ocupacional"
+                            android:minHeight="48dp" />
 
                         <Space
                             android:layout_width="match_parent"
@@ -863,7 +874,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/gineco"/>
+                            android:hint="@string/gineco"
+                            android:minHeight="48dp"/>
 
                         <Space
                             android:layout_width="match_parent"
@@ -875,7 +887,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/trauma"/>
+                            android:hint="@string/trauma"
+                            android:minHeight="48dp"/>
 
                         <Space
                             android:layout_width="match_parent"
@@ -887,7 +900,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"
-                            android:hint="@string/otros"/>
+                            android:hint="@string/otros"
+                            android:minHeight="48dp"/>
 
                         <Space
                             android:layout_width="match_parent"
@@ -951,7 +965,8 @@
                             android:id="@+id/b5_date1"
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date1"/>
+                            android:hint="@string/b5_date1"
+                            android:minHeight="48dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -965,7 +980,8 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:inputType="date"
-                            android:hint="@string/b5_date2"/>
+                            android:hint="@string/b5_date2"
+                            android:minHeight="48dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -979,7 +995,8 @@
                             android:layout_width="52dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b5_date3"
-                            tools:ignore="TouchTargetSizeCheck" />
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:minHeight="48dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -990,9 +1007,10 @@
 
                         <EditText
                             android:id="@+id/b5_date4"
-                            android:layout_width="40dp"
+                            android:layout_width="48dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date4"/>
+                            android:hint="@string/b5_date4"
+                            android:minHeight="48dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1005,7 +1023,8 @@
                             android:id="@+id/b5_date5"
                             android:layout_width="30dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date5"/>
+                            android:hint="@string/b5_date5"
+                            android:minHeight="48dp"/>
 
                     </LinearLayout>
 
@@ -1026,7 +1045,8 @@
                             android:id="@+id/b5_date6"
                             android:layout_width="52dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date6"/>
+                            android:hint="@string/b5_date6"
+                            android:minHeight="48dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1038,7 +1058,8 @@
                         <EditText
                             android:id="@+id/b5_date7"
                             android:layout_width="40dp"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1051,7 +1072,8 @@
                             android:id="@+id/b5_date8"
                             android:layout_width="30dp"
                             android:layout_height="wrap_content"
-                            android:hint="@string/b5_date8"/>
+                            android:hint="@string/b5_date8"
+                            android:minHeight="48dp"/>
 
                     </LinearLayout>
 
@@ -1604,6 +1626,14 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:hint="@string/b8_date7"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
 
                         <TextView
                             android:layout_width="wrap_content"
