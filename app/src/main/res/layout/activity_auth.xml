@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+<FrameLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.activities.AuthActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/fondo_degradado_auth">
+
 
         <ImageView
             android:id="@+id/ivlogo_aph"
@@ -106,6 +113,12 @@
             android:layout_marginTop="20dp"
             tools:ignore="MissingConstraints" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
     </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </ScrollView>
+
+</FrameLayout>
